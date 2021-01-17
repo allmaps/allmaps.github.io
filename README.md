@@ -1,1 +1,1 @@
-# allmaps.github.io
+All!
