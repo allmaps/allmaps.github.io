@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset='utf-8'>
-	<meta name='viewport' content='width=device-width,initial-scale=1'>
-	<title>Allmaps</title>
-	<link rel='icon' type='image/png' href='/favicon.png'>
-	<style>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>Allmaps</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel='icon' type='image/png' href='/favicon.png'>
+  <style>
     body {
       margin: 0;
       padding: 0;
@@ -13,17 +15,78 @@
       display: flex;
       width: 100%;
       height: 100%;
-      align-items: center;
+      /* align-items: center; */
       justify-content: center;
+      font-size: 18px;
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.4;
+    }
+
+    main {
+      margin-top: 4em;
+      max-width: 540px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 1em;
+    }
+
+    a, a:visited {
+      color: black;
     }
 
     img {
       width: 100px;
+      padding: 1em;
+    }
+
+    p {
+      /* text-align: center; */
     }
   </style>
 </head>
 <body>
-  <img alt="Allmaps"
-    src="https://raw.githubusercontent.com/allmaps/style/master/images/allmaps-logo.svg" />
+  <main>
+    <img alt="Allmaps"
+      src="https://raw.githubusercontent.com/allmaps/style/master/images/allmaps-logo.svg" />
+    <div>
+      <p>
+        Allmaps is a set of <a href="https://github.com/allmaps">open source tools</a> that make
+        is easier and more fun to find, explore and georeference map collections.</p>
+      <p>
+        <strong>Allmaps works with any image repository that supports <a href="https://iiif.io/">IIIF</a>.</strong>
+      </p>
+      <p>
+        All components rely on a simple JSON metadata structure that holds information about each
+        map’s control points and mask. This metadata structure is part of an
+        <a href="https://iiif.io/community/groups/maps-tsg/">upcoming standard
+        by the IIIF community</a>. For some examples of this metadata, see my
+        <a href="https://github.com/bertspaan/iiif-map-collections#georeference-annotations">IIIF Map Collections</a> repository.
+      </p>
+      <p>
+        Allmaps is far from finished. For now, you can have a look at the following things:
+      </p>
+      <ul>
+        <li>
+          <a href="https://viewer.allmaps.org/">Allmaps viewer</a>
+        </li>
+        <li>
+          <a href="https://allmaps.org/editor">Allmaps editor</a>
+        </li>
+        <li>
+          <a href="https://github.com/allmaps">GitHub</a>
+        </li>
+        <li>
+          <a href="https://observablehq.com/collection/@bertspaan/iiif-maps">Observable notebooks</a>
+        </li>
+      </ul>
+      <!-- <p>
+        Parts of this project are supported by Delft University of Technology.
+      </p> -->
+      <p>
+        Follow <a href="https://twitter.com/bertspaan">@bertspaan</a> for updates.
+      </p>
+    </div>
+  </main>
 </body>
 </html>
