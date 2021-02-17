@@ -37,6 +37,20 @@
       width: 100px;
       padding: 2em;
     }
+
+    dl {
+      margin-left: 1em;
+    }
+    
+    dt {
+      font-style: italic;
+    }
+
+    dd {
+      display: block;
+      padding: 0.5em;
+      margin-left: 1em;
+    }
   </style>
 </head>
 <body>
@@ -46,38 +60,64 @@
     <div>
       <p>
         Allmaps is a set of <a href="https://github.com/allmaps">open source tools</a> that make
-        it easier and more fun to search, explore, georeference and work with collections of scanned maps.</p>
+        it easier and more fun to search, explore, georeference and work with collections of digitised maps.</p>
       <p>
-        <strong>Allmaps works with any image repository that supports <a href="https://iiif.io/">IIIF</a>.</strong>
+        <strong>Allmaps works with any image repository that supports the <a href="https://iiif.io/">International Image Interoperability Framework</a> (IIIF).</strong>
       </p>
       <p>
         All components rely on a simple JSON metadata structure that holds information about each
-        map’s control points and mask. This metadata structure is part of an
-        <a href="https://iiif.io/community/groups/maps-tsg/">upcoming standard
-        by the IIIF community</a> and is based on W3C’s <a href="https://www.w3.org/TR/annotation-model/">Web Annotation</a> specification.
-        For some examples of what this data looks like, see my
-        <a href="https://github.com/bertspaan/iiif-map-collections#georeference-annotations">IIIF Map Collections</a> repository.
+        map’s control points and mask. This metadata structure anticipates the upcoming JSON schema prepared by the 
+        <a href="https://iiif.io/community/groups/maps-tsg/">IIIF Community</a>, and is based on W3C’s 
+        <a href="https://www.w3.org/TR/annotation-model/">Web Annotation</a> specification.
+        Please refer to the 
+        <a href="https://github.com/bertspaan/iiif-map-collections#georeference-annotations">IIIF Map Collections</a> 
+        repository for exemplary data.
       </p>
       <p>
-        Allmaps and its components are far from finished. For now, you can have a look at the following things:
+        Allmaps and its components are far from finished. For now, you can explore the following parts:
       </p>
       <ul>
         <li>
-          <a href="https://viewer.allmaps.org/">Allmaps viewer</a>;
+          <a href="https://viewer.allmaps.org/">Allmaps viewer</a>
         </li>
         <li>
-          <a href="https://allmaps.org/editor">Allmaps editor</a>;
+          <a href="https://allmaps.org/editor">Allmaps editor</a>
         </li>
         <li>
-          <a href="https://github.com/allmaps">GitHub</a>;
+          <a href="https://github.com/allmaps">GitHub repositories</a>
         </li>
         <li>
-          <a href="https://observablehq.com/collection/@bertspaan/iiif-maps">Observable notebooks</a>.
+          <a href="https://observablehq.com/collection/@bertspaan/iiif-maps">Observable notebooks</a>
         </li>
       </ul>
-      <!-- <p>
-        Parts of this project are supported by Delft University of Technology.
-      </p> -->
+      <p><strong>Credits</strong></p>
+      <dl>
+        <dt>Concept</dt>
+        <dd>Bert Spaan & Jules Schoonman (TU Delft Library)</dd>
+        <dt>Coding</dt>
+        <dd>Bert Spaan</dd>
+        <dt>Advise<dt>
+        <dd>...</dd>
+        <dt>Design<dt>
+        <dd>...</dd>
+      </dl>
+      <p><strong>Partners</strong></p>
+    </dl>
+      <ul>
+        <li>
+          <a href="https://heritage.tudelft.nl/">Delft University of Technology Library</a> * 
+        </li>
+        <li>
+          <a href="https://www.library.universiteitleiden.nl/">Leiden University Libraries</a> *
+        </li>
+        <li>
+          <a href="https://www.stanford.edu/">Stanford University</a>
+        </li>
+        <li>
+          <a href="https://iiif.io/community/groups/maps/">IIIF Maps Community Group</a>
+        </li>
+      </ul>
+      <p><em>* Funding partners</em></p>
       <p>
         Follow <a href="https://twitter.com/bertspaan">@bertspaan</a> for updates.
       </p>
