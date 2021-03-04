@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset='utf-8'>
+  <meta name='viewport' content='width=device-width,initial-scale=1'>
+  <title>{{ site.title }}</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel='icon' type='image/png' href='/favicon.png'>
+  <link rel="stylesheet" href="{{ "/assets/css/main.css" | relative_url }}">
+  <style>
+
+  </style>
+</head>
+<body>
+  <header>
+    <img alt="Allmaps" class="logo"
+      src="https://raw.githubusercontent.com/allmaps/style/master/images/allmaps-logo.svg" />
+  </header>
+  <main>
+    <div>
+    {{ content }}
+    </div>
+  </main>
+</body>
+</html>
