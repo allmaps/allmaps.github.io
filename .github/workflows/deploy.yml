@@ -1,0 +1,31 @@
+name: Build and deploy main branch to gh-pages branch
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    # Make sure pnpm is installed!
+    # https://github.com/pnpm/action-setup
+
+    - name: Install and Build 🔧
+        run: |
+          pnpm ci
+          pnpm run build
+
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4.3.3
+        with:
+          branch: gh-pages
+          folder: build
