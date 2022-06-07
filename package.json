@@ -20,6 +20,9 @@
   ],
   "license": "GPL-3.0-or-later",
   "type": "module",
+  "engines": {
+    "node": ">=16.7.0"
+  },
   "scripts": {
     "dev": "svelte-kit dev",
     "build": "svelte-kit build",
