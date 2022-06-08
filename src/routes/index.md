@@ -19,34 +19,31 @@
       Allmaps is working with the @iiif_io community on a data specification for georeferencing IIIF images.
     iiif annotation spec <a href="https://iiif.io/community/groups/maps/">IIIF Maps Community Group</a>
     </p>
-  </Card>
+  </Card>-->
 
   <Card title="Client-side map warping" src="allmaps-viewer.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2Fmgc1WXkYnhMcA4Hz">
     <p>
-      Allmaps can warp maps on-the-fly, in the browser. no need to create image derivatives such as GeoTIFFs or map tiles.
+      Allmaps can warp maps on-the-fly, in the browser. Allmaps functions without the need to first create image derivatives such as GeoTIFFs or map tiles.
     </p>
     <p>
-      iiif to only download the
-      Allmaps uses WebGL to
-      allmaps can render hundreds of maps at the same time, stitch them together.
-      see preview.
+      To warp a map, Allmaps uses the <a href="https://iiif.io/api/image/3.0/#4-image-requests">IIIF Image API</a> to only download the portion of the image that's needed, in the right scale. The <a href="https://allmaps.org/webgl2-preview/">new version of Allmaps Viewer</a> can even stitch together hundreds of maps at the same time.
     </p>
   </Card>
 
+  <!--
   <Card title="More than displaying map layers" src="annotorious.jpg" href="https://observablehq.com/@bertspaan/allmaps-and-annotorious">
     <p>
-    But Allmaps is not just about warping images and viewing maps on their geographical location: it's about open standards and open data.
+    But Allmaps is not just about warping images and displaying map overlays: it's about open standards and open data.
       not just images
       All components rely on a simple JSON metadata structure that holds information about each
     map’s control points and mask.
     </p>
     <p>
       With this data, you can, for example, build geospatial indexes to quickly find the maps you're looking for, <a href="https://twitter.com/aboutgeo/status/1408063666176487426">improve tools for map vectorization</a>, <a href="https://observablehq.com/@bertspaan/using-allmaps-to-draw-geojson-on-a-iiif-image">draw GeoJSON on an original unwarped map</a> or <a href="https://observablehq.com/@bertspaan/georeferencing-a-map-by-transcribing-toponyms">automatically georeference maps by geocoding transcribed toponyms</a>.
-
-
     </p>
   </Card>
 
+  <!--
   <Card title="It's all about the URL" src="allmaps-viewer-url.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fdev.annotations.allmaps.org%2Fimages%2F813b0579711371e2">
     <p>
      and there's no need to create an account to start
