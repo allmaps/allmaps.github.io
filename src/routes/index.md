@@ -14,14 +14,14 @@
     </p>
   </Card>
 
-  <!-- <Card title="Built on open standards" src="georef-annotation.jpg" href="https://annotations.allmaps.org/images/tKd1WKckZzZmFj7r">
+  <Card title="Built on open standards" src="georef-annotation.jpg" href="https://annotations.allmaps.org/images/tKd1WKckZzZmFj7r">
     <p>
-      Allmaps is working with the @iiif_io community on a data specification for georeferencing IIIF images.
-    iiif annotation spec <a href="https://iiif.io/community/groups/maps/">IIIF Maps Community Group</a>
-    All components rely on a simple JSON metadata structure that holds information about each
-    map’s control points and mask.
+    All components of Allmaps rely on a simple JSON metadata format that holds information about each map’s control points and mask. Allmaps calls this format a <em>georeference annotation</em>, it's based on W3C's <a href="https://www.w3.org/TR/annotation-model/">Web Annotation standard</a>.
     </p>
-  </Card>-->
+    <p>
+      Allmaps is working with the <a href="https://iiif.io/community/groups/maps-tsg/">IIIF community</a> on a specification for georeference annotations and turning them into an official <a href="https://iiif.io/api/extension/">IIIF extension</a>.
+    </p>
+  </Card>
 
   <Card title="Client-side map warping" src="allmaps-viewer.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2Fmgc1WXkYnhMcA4Hz">
     <p>
