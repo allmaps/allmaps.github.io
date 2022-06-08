@@ -2,7 +2,7 @@
   import Face from '$lib/components/Face.svelte'
 </script>
 
-<div class="drop-shadow-lg p-4 rounded about-me max-w-2xl mx-auto">
+<div class="drop-shadow-lg p-4 rounded about-me max-w-2xl mx-auto my-8">
   <p>
     Allmaps is a project by <Face
       src="bert.jpg"
