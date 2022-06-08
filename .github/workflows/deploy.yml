@@ -19,13 +19,13 @@ jobs:
     # Make sure pnpm is installed!
     # https://github.com/pnpm/action-setup
 
-    - name: Install and Build 🔧
-        run: |
-          pnpm ci
-          pnpm run build
+    # - name: Install and Build 🔧
+    #     run: |
+    #       pnpm ci
+    #       pnpm run build
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
-        with:
-          branch: gh-pages
-          folder: build
+    #   - name: Deploy 🚀
+    #     uses: JamesIves/github-pages-deploy-action@v4.3.3
+    #     with:
+    #       branch: gh-pages
+    #       folder: build
