@@ -5,7 +5,7 @@
 </script>
 
 <Cards>
-  <Card title="Works with any IIIF map" src="allmaps-editor.jpg" href="https://editor.allmaps.org/#/collection?url=https%3A%2F%2Fcdm21033.contentdm.oclc.org%2Fiiif%2Finfo%2Fkrt%2F2175%2Fmanifest.json&image=tp4PzMTZyxZFrsW6">
+  <Card title="Works with any IIIF map" src="allmaps-editor.jpg" href="https://editor.allmaps.org/#/collection?url=https%3A%2F%2Fcdm21033.contentdm.oclc.org%2Fiiif%2Finfo%2Fkrt%2F2175%2Fmanifest.json">
     <p>
       More and more institutions across the world are adopting <a href="https://iiif.io/">IIIF</a> to provide access to their collections of digitized images. Among all these images are 100,000s of maps.
     </p>
@@ -42,13 +42,14 @@
     <!-- Add section about API, about open data, about using this data in your own tools -->
   </Card>
 
-  <!--
   <Card title="It's all about the URL" src="allmaps-viewer-url.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fdev.annotations.allmaps.org%2Fimages%2F813b0579711371e2">
     <p>
-     and there's no need to create an account to start
-    They are static sites, just HTML and JavaScript, they function by referencing IIIF or Web Annotation URLs. They don't need a database or cloud infrastructure.
+      All that's needed to start georeferencing an image with <a href="https://editor.allmaps.org/">Allmaps Editor</a> is the URL of a <a href="https://iiif.io/api/image/3.0/#22-image-information-request-uri-syntax">IIIF Image</a> or <a href="https://iiif.io/api/presentation/3.0/#52-manifest">Manifest</a>. You don't need to create an account or to first download and import images.
     </p>
-  </Card> -->
+    <p>
+      And <a href="https://viewer.allmaps.org/">Allmaps Viewer</a> only needs the URL of a georeference annotation to warp a map. Both tools are simple static sites and don't need a no database or GIS infrastructure to run — just a IIIF server. They function by referencing IIIF images or georeference annotations in their URL. This makes it easy to share maps and georeference data on the internet.
+    </p>
+  </Card>
 
   <Card title="Open source components" src="github.jpg" href="https://github.com/allmaps">
     <p>
