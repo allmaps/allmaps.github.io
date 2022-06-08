@@ -18,6 +18,8 @@
     <p>
       Allmaps is working with the @iiif_io community on a data specification for georeferencing IIIF images.
     iiif annotation spec <a href="https://iiif.io/community/groups/maps/">IIIF Maps Community Group</a>
+    All components rely on a simple JSON metadata structure that holds information about each
+    map’s control points and mask.
     </p>
   </Card>-->
 
@@ -30,17 +32,14 @@
     </p>
   </Card>
 
-  <!--
   <Card title="More than displaying map layers" src="annotorious.jpg" href="https://observablehq.com/@bertspaan/allmaps-and-annotorious">
     <p>
-    But Allmaps is not just about warping images and displaying map overlays: it's about open standards and open data.
-      not just images
-      All components rely on a simple JSON metadata structure that holds information about each
-    map’s control points and mask.
+    But Allmaps is not just about warping images and displaying map overlays: it's about open standards and open data. A georeference annotation can be used to display a warped map, but there's much more Allmaps can do with this data.
     </p>
     <p>
-      With this data, you can, for example, build geospatial indexes to quickly find the maps you're looking for, <a href="https://twitter.com/aboutgeo/status/1408063666176487426">improve tools for map vectorization</a>, <a href="https://observablehq.com/@bertspaan/using-allmaps-to-draw-geojson-on-a-iiif-image">draw GeoJSON on an original unwarped map</a> or <a href="https://observablehq.com/@bertspaan/georeferencing-a-map-by-transcribing-toponyms">automatically georeference maps by geocoding transcribed toponyms</a>.
+      For example, you can build geospatial indexes to quickly find the maps you're looking for, <a href="https://twitter.com/aboutgeo/status/1408063666176487426">improve tools for map vectorization</a>, <a href="https://observablehq.com/@bertspaan/using-allmaps-to-draw-geojson-on-a-iiif-image">draw GeoJSON on an original unwarped map</a> or <a href="https://observablehq.com/@bertspaan/georeferencing-a-map-by-transcribing-toponyms">automatically georeference maps by geocoding transcribed toponyms</a>.
     </p>
+    <!-- Add section about API, about open data, about using this data in your own tools -->
   </Card>
 
   <!--
