@@ -88,5 +88,6 @@ Allmaps supported and funded by the following organizations:
 - <a href="https://geoplaza.vu.nl/cms/">Vrije Universiteit Amsterdam</a>
 - <a href="https://www.leventhalmap.org/">Leventhal Map & Education Center at the Boston Public Library</a>
 - <a href="https://openhistoricalmap.org/">OpenHistoricalMap</a>
+- <a href="https://www.kb.nl/en">National Library of the Netherlands</a>
 
 <strong>If you think Allmaps can be useful for your institution or if you have questions about the project, you can send an email to <a href="mailto:hello@bertspaan.nl">Bert Spaan</a>.</strong>
