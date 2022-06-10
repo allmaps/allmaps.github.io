@@ -81,7 +81,7 @@ Allmaps and its components are far from finished. For now, you can explore the f
 
 ## Partners
 
-Allmaps supported and funded by the following organizations:
+Allmaps is supported and funded by the following organizations:
 
 - <a href="https://heritage.tudelft.nl/">Delft University of Technology Library</a>
 - <a href="https://www.library.universiteitleiden.nl/">Leiden University Libraries</a>
