@@ -14,7 +14,7 @@
     </p>
   </Card>
 
-  <Card title="Built on open standards" src="georef-annotation.jpg" href="https://annotations.allmaps.org/images/tKd1WKckZzZmFj7r">
+  <Card title="Built on open standards" src="georef-annotation.jpg" href="https://annotations.allmaps.org/images/e97a79d041525120">
     <p>
     All components of Allmaps rely on a simple JSON metadata format that holds information about each map’s control points and mask. Allmaps calls this format a <em>georeference annotation</em>, it's based on W3C's <a href="https://www.w3.org/TR/annotation-model/">Web Annotation standard</a>.
     </p>
@@ -23,7 +23,7 @@
     </p>
   </Card>
 
-  <Card title="Client-side map warping" src="allmaps-viewer.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2Fmgc1WXkYnhMcA4Hz">
+  <Card title="Client-side map warping" src="allmaps-viewer.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2Fa7afe9a34c3b8633">
     <p>
       Allmaps can warp maps on-the-fly, in the browser. Allmaps functions without the need to first create image derivatives such as GeoTIFFs or map tiles.
     </p>
@@ -42,7 +42,7 @@
     <!-- Add section about API, about open data, about using this data in your own tools -->
   </Card>
 
-  <Card title="It's all about the URL" src="allmaps-viewer-url.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fdev.annotations.allmaps.org%2Fimages%2F813b0579711371e2">
+  <Card title="It's all about the URL" src="allmaps-viewer-url.jpg" href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2F813b0579711371e2">
     <p>
       All that's needed to start georeferencing an image with <a href="https://editor.allmaps.org/">Allmaps Editor</a> is the URL of a <a href="https://iiif.io/api/image/3.0/#22-image-information-request-uri-syntax">IIIF Image</a> or <a href="https://iiif.io/api/presentation/3.0/#52-manifest">Manifest</a>. You don't need to create an account or to first download and import images.
     </p>
