@@ -119,6 +119,7 @@
     position: absolute;
     height: 100%;
     min-height: 1081px;
+    pointer-events: none;
   }
 
   #masks path {
