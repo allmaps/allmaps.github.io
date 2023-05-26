@@ -75,8 +75,9 @@
 
 Allmaps and its components are far from finished. For now, you can explore the following links:
 
-- <a href="https://editor.allmaps.org/">Allmaps Editor</a>: georeference any IIIF map by entering the URL of a IIIF Manifest or IIIF Image.
-- <a href="https://viewer.allmaps.org/">Allmaps Viewer</a>: warp a IIIF map by entering the URL or contents of a Georeference Annotation.
+- <a href="https://editor.allmaps.org/">Allmaps Editor</a>: georeference any IIIF map by entering the URL of a IIIF Manifest or IIIF Image
+- <a href="https://viewer.allmaps.org/">Allmaps Viewer</a>: warp a IIIF map by entering the URL or contents of a Georeference Annotation
+- <a href="https://latest.allmaps.org">Allmaps Latest</a>: The latest maps edited with Allmaps Editor
 - <a href="https://github.com/allmaps">GitHub repositories</a>
 - <a href="https://observablehq.com/@allmaps">Observable notebooks</a>
 
