@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <link rel="icon" href="./favicon.png" />
+    <link rel="icon" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>Allmaps</title>
@@ -15,126 +15,31 @@
     <meta property="og:image" content="https://allmaps.org/allmaps-open-graph.jpg" />
 
     <script async defer data-website-id="6acbc0f7-1959-4415-afda-1d16ddf8b766" src="https://stats.allmaps.org/umami.js"></script>
-    <meta http-equiv="content-security-policy" content="">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/__layout.svelte-26c50041.css">
-	<link rel="stylesheet" href="/_app/immutable/assets/pages/index.md-3a9f4a94.css">
-	<link rel="modulepreload" href="/_app/immutable/start-836206ad.js">
-	<link rel="modulepreload" href="/_app/immutable/chunks/index-6e6c6b5a.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/__layout.svelte-21ff8680.js">
-	<link rel="modulepreload" href="/_app/immutable/pages/index.md-539ad11a.js">
+    
+		<link rel="modulepreload" href="/_app/immutable/entry/start.dda01628.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index.df62fa02.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.e6e371a4.js">
+		<link rel="modulepreload" href="/_app/immutable/entry/app.b7265df8.js">
   </head>
   <body>
     <div>
+			<script>
+				{
+					__sveltekit_otaqcb = {
+						base: "",
+						env: {}
+					};
 
+					const element = document.currentScript.parentElement;
 
-<header class="relative overflow-hidden flex justify-center items-center h-screen text-center mb-8 lg:mb-20 svelte-1of555y"><svg class="background svelte-1of555y" id="masks" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" preserveAspectRatio="xMinYMin slice" x="0px" y="0px" viewBox="0 0 1600 1381"><defs></defs><path d="M 1028.3 975.1  L 624.5 1017.6  L 659.3 1341.3  L 956.4 1310.1  L 945 1201.2  L 1051.7 1190  L 1028.3 975.1 Z" class="svelte-1of555y" style="fill: #A5DFE6; fill-opacity: 0.3873; stroke: #63D8E6;"></path>
-      <path d="M 1457.1 459  L 921.5 305.9  L 997.5 39  L 1284.9 120.7  L 1254.9 226.1  L 1503.1 297.5  L 1457.1 459 Z" class="svelte-1of555y" style="fill: #FE5E60; fill-opacity: 0.2548; stroke: #FE5E60;"></path>
-      <path d="M 178.7 142.9  L 375.3 114  L 602.3 73.3  L 678.9 56.4  L 698.6 164.9  L 624.8 183.3  L 653.5 375  L 167.5 463.5  L 144.5 284.5  L 196.5 273.5  L 178.7 142.9 Z" class="svelte-1of555y" style="fill: #FFE4A4; fill-opacity: 0.3361; stroke: #FFC742;"></path>
-      <path d="M 483.8 640  L 419.3 875.1  L 478.6 893.4  L 488.9 942.8  L 484.1 998.5  L 465.1 1056.6  L 431.7 1110.7  L 401.4 1146.2  L 83.4 1056.1  L 223.6 565.6  L 483.8 640 Z" class="svelte-1of555y" style="fill: #C552B5; fill-opacity: 0.5033; stroke: #C552B5;"></path>
-      <path d="M 1097.7 572  L 1446.1 571.9  L 1446.1 856  L 1295.3 856  L 1295.3 784.1  L 1183.3 774.9  L 1173.3 855.5  L 1097.1 855.5  L 1097.7 572 Z" class="svelte-1of555y" style="fill: #64C18F; fill-opacity: 0.5256; stroke: #64C18F;"></path>
-      </svg>
-
-  <div class="flex flex-col items-center w-80"><img alt="Allmaps" class="w-24" src="https://raw.githubusercontent.com/allmaps/style/master/images/allmaps-logo-inverted.svg">
-    <h1>Allmaps</h1>
-    <h2>Curating, georeferencing and exploring for IIIF maps</h2>
-    <p>100,000s of maps are available through IIIF, across libraries, archives
-      and museums worldwide. Allmaps makes it easier and more inspiring to
-      explore, georeference and work with collections of digitized maps.
-    </p></div>
-</header>
-
-<main class="container mx-auto p-4 max-w-screen-lg"><ol class="list-none m-0"><li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>Works with any IIIF map</h2>
-    <p>More and more institutions across the world are adopting <a href="https://iiif.io/">IIIF</a> to provide access to their collections of digitized images. Among all these images are 100,000s of maps.
-    </p>
-    <p>With Allmaps, you can georeference any map from any institution by using its IIIF URL. Allmaps doesn&#39;t require complicated GIS infrastructure and it doesn&#39;t need to generate XYZ map tiles. All that&#39;s needed is a IIIF server.
-    </p></div>
-  <div class="md:w-1/2 p-8"><a href="https://editor.allmaps.org/#/collection?url=https%3A%2F%2Fcdm21033.contentdm.oclc.org%2Fiiif%2Finfo%2Fkrt%2F2175%2Fmanifest.json"><img src="cards/allmaps-editor.jpg" alt="Works with any IIIF map"></a></div></li>
-  <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>Built on open standards</h2>
-    <p>All components of Allmaps rely on a simple JSON metadata format that holds information about each map’s control points and mask. Allmaps calls this format a <em>georeference annotation</em>, it&#39;s based on W3C&#39;s <a href="https://www.w3.org/TR/annotation-model/">Web Annotation standard</a>.
-    </p>
-    <p>Allmaps is working with the <a href="https://iiif.io/community/groups/maps-tsg/">IIIF community</a> on a specification for georeference annotations and turning them into an official <a href="https://iiif.io/api/extension/">IIIF extension</a>.
-    </p></div>
-  <div class="md:w-1/2 p-8"><a href="https://annotations.allmaps.org/images/e97a79d041525120"><img src="cards/georef-annotation.jpg" alt="Built on open standards"></a></div></li>
-  <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>Client-side map warping</h2>
-    <p>Allmaps can warp maps on-the-fly, in the browser. Allmaps functions without the need to first create image derivatives such as GeoTIFFs or map tiles.
-    </p>
-    <p>To warp a map, Allmaps uses the <a href="https://iiif.io/api/image/3.0/#4-image-requests">IIIF Image API</a> to only download the portion of the image that&#39;s needed, in the right scale. The <a href="https://allmaps.org/webgl2-preview/">new version of Allmaps Viewer</a> can even stitch together hundreds of maps at the same time.
-    </p></div>
-  <div class="md:w-1/2 p-8"><a href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2Fa7afe9a34c3b8633"><img src="cards/allmaps-viewer.jpg" alt="Client-side map warping"></a></div></li>
-  <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>More than displaying map layers</h2>
-    <p>But Allmaps is not just about warping images and displaying map overlays: it&#39;s about open standards and open data. A georeference annotation can be used to display a warped map, but there&#39;s much more Allmaps can do with this data.
-    </p>
-    <p>For example, you can build geospatial indexes to quickly find the maps you&#39;re looking for, <a href="https://twitter.com/aboutgeo/status/1408063666176487426">improve tools for map vectorization</a>, <a href="https://observablehq.com/@bertspaan/using-allmaps-to-draw-geojson-on-a-iiif-image">draw GeoJSON on an original unwarped map</a> or <a href="https://observablehq.com/@bertspaan/georeferencing-a-map-by-transcribing-toponyms">automatically georeference maps by geocoding transcribed toponyms</a>.
-    </p>
-    </div>
-  <div class="md:w-1/2 p-8"><a href="https://observablehq.com/@bertspaan/allmaps-and-annotorious"><img src="cards/annotorious.jpg" alt="More than displaying map layers"></a></div></li>
-  <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>It&#39;s all about the URL</h2>
-    <p>All that&#39;s needed to start georeferencing an image with <a href="https://editor.allmaps.org/">Allmaps Editor</a> is the URL of a <a href="https://iiif.io/api/image/3.0/#22-image-information-request-uri-syntax">IIIF Image</a> or <a href="https://iiif.io/api/presentation/3.0/#52-manifest">Manifest</a>. You don&#39;t need to create an account or to first download and import images.
-    </p>
-    <p>And <a href="https://viewer.allmaps.org/">Allmaps Viewer</a> only needs the URL of a georeference annotation to warp a map. Both tools are simple static sites and don&#39;t need a no database or GIS infrastructure to run — just a IIIF server. They function by referencing IIIF images or georeference annotations in their URL. This makes it easy to share maps and georeference data on the internet.
-    </p></div>
-  <div class="md:w-1/2 p-8"><a href="https://viewer.allmaps.org/#data=data%3Atext%2Fx-url%2Chttps%3A%2F%2Fannotations.allmaps.org%2Fimages%2F813b0579711371e2"><img src="cards/allmaps-viewer-url.jpg" alt="It&#39;s all about the URL"></a></div></li>
-  <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>Open source components</h2>
-    <p>The core components of Allmaps are open source and will always be freely available. The most important goal of the project is to make maps more accessible, from map collections from institutions big and small.
-    </p>
-    <p>We&#39;re working on plugins for <a href="https://openlayers.org/">OpenLayers</a> and <a href="https://leafletjs.com/">Leaflet</a>. These plugins will make it easy to start displaying georeferenced maps on your own website, without using infrastructure provided by Allmaps.
-    </p></div>
-  <div class="md:w-1/2 p-8"><a href="https://github.com/allmaps"><img src="cards/github.jpg" alt="Open source components"></a></div></li>
-  <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center"><div class="md:w-1/2 p-4"><h2>Not just the browser</h2>
-    <p>Allmaps can export georeferenced maps to formats like GeoJSON or GeoTIFF. You can keep using your favorite scripting language, database or GIS.
-    </p>
-    <p>The <a href="https://observablehq.com/@bertspaan/allmaps-tile-server">Allmaps Tile Server</a>, a tiny proxy server that turns georeference annotations into <a href="https://en.wikipedia.org/wiki/Tiled_web_map">XYZ map tile layers</a>, can be used to view warped maps in existing mapping websites or applications like QGIS.
-    </p></div>
-  <div class="md:w-1/2 p-8"><a href="https://observablehq.com/@bertspaan/allmaps-tile-server"><img src="cards/qgis.jpg" alt="Not just the browser"></a></div></li></ol>
-<div class="drop-shadow-lg p-4 rounded about-me max-w-2xl mx-auto my-8 svelte-19txolb"><p>Allmaps is a project by <a href="https://bertspaan.nl" class="no-underline"><img class="w-6 inline-block rounded-lg" src="faces/bert.jpg" alt="Bert Spaan">
-  <span class="underline">Bert Spaan</span></a> and <a href="https://www.tudelft.nl/staff/j.a.schoonman/?cHash=a50711d67f2250b0169ff757aacf8f6f" class="no-underline"><img class="w-6 inline-block rounded-lg" src="faces/jules.jpg" alt="Jules Schoonman">
-  <span class="underline">Jules Schoonman</span></a>. We love maps, but we can never find the maps we&#39;re looking for. We both
-    think working with digitized maps is far too complicated and expensive. It
-    should be easier and more fun!
-  </p>
-  <p>Bert Spaan is a freelance creative technologist with an interest in
-    cartography and digital maps. He is also one of the chairs of the <a href="https://iiif.io/community/groups/maps-tsg/">IIIF Maps Technical Specification Group</a>.
-  </p>
-  <p>Jules Schoonman is an architect and researcher working as a policy advisor
-    at the Delft University of Technology, where he is responsible for the
-    physical and digital presentation of academic heritage.
-  </p>
-  <p>For updates about Allmaps, follow <a href="https://twitter.com/bertspaan">@bertspaan</a> on Twitter.
-  </p>
-</div>
-<p>Allmaps and its components are far from finished. For now, you can explore the following links:</p>
-<ul><li><a href="https://editor.allmaps.org/">Allmaps Editor</a>: georeference any IIIF map by entering the URL of a IIIF Manifest or IIIF Image.</li>
-<li><a href="https://viewer.allmaps.org/">Allmaps Viewer</a>: warp a IIIF map by entering the URL or contents of a georeference annotation.</li>
-<li><a href="https://github.com/allmaps">GitHub repositories</a></li>
-<li><a href="https://observablehq.com/collection/@bertspaan/allmaps">Observable notebooks</a></li></ul>
-<h2>Partners</h2>
-<p>Allmaps is supported and funded by the following organizations:</p>
-<ul><li><a href="https://heritage.tudelft.nl/">Delft University of Technology Library</a></li>
-<li><a href="https://www.library.universiteitleiden.nl/">Leiden University Libraries</a></li>
-<li><a href="https://geoplaza.vu.nl/cms/">Vrije Universiteit Amsterdam</a></li>
-<li><a href="https://www.leventhalmap.org/">Leventhal Map &amp; Education Center at the Boston Public Library</a></li>
-<li><a href="https://openhistoricalmap.org/">OpenHistoricalMap</a></li>
-<li><a href="https://www.kb.nl/en">National Library of the Netherlands</a></li></ul>
-<strong>If you think Allmaps can be useful for your institution or if you have questions about the project, you can send an email to <a href="mailto:hello@bertspaan.nl">Bert Spaan</a>.</strong></main>
-
-
-		<script type="module" data-sveltekit-hydrate="1jyhnwc">
-		import { start } from "/_app/immutable/start-836206ad.js";
-		start({
-			target: document.querySelector('[data-sveltekit-hydrate="1jyhnwc"]').parentNode,
-			paths: {"base":"","assets":""},
-			session: {},
-			route: true,
-			spa: false,
-			trailing_slash: "never",
-			hydrate: {
-				status: 200,
-				error: null,
-				nodes: [0, 2],
-				params: {},
-				routeId: ""
-			}
-		});
-	</script></div>
+					Promise.all([
+						import("/_app/immutable/entry/start.dda01628.js"),
+						import("/_app/immutable/entry/app.b7265df8.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element);
+					});
+				}
+			</script>
+		</div>
   </body>
 </html>
