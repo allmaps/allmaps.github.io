@@ -5,7 +5,7 @@
 </script>
 
 <li class="md:flex flex-row odd:flex-row-reverse flex-none items-center">
-  <div class="md:w-1/2 p-4">
+  <div class="md:w-1/2 p-8 prose">
     <h2>{title}</h2>
     <slot />
   </div>

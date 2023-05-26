@@ -1,8 +1,9 @@
 <script lang="ts">
   import Face from '$lib/components/Face.svelte'
+  import Masks from '$lib/components/Masks.svelte'
 </script>
 
-<div class="drop-shadow-lg p-4 rounded about-me max-w-2xl mx-auto my-8">
+<div class="about relative p-10 bg-white rounded-lg box max-w-2xl mx-auto my-8 prose">
   <p>
     Allmaps is a project by <Face
       src="bert.jpg"
@@ -28,15 +29,38 @@
     at the Delft University of Technology, where he is responsible for the
     physical and digital presentation of academic heritage.
   </p>
-  <p>
+  <p class="mb-0">
     For updates about Allmaps, follow <a href="https://twitter.com/bertspaan"
       >@bertspaan</a
     > on Twitter.
   </p>
+  <Masks />
 </div>
 
 <style scoped>
-  .about-me {
-    background-color: var(--yellow-2);
+  .about::after {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    /* background: linear-gradient(
+      135deg,
+      rgba(255, 199, 66, 0.4) 0%,
+      rgba(255, 86, 186, 0.4) 100%
+    ); */
+
+     background: conic-gradient(
+      rgba(255, 199, 66, 0.4) 0deg 0deg,
+      rgba(120, 100, 100, 0.2) 70deg 90deg,
+      rgba(255, 86, 186, 0.4) 135deg 180deg,
+      rgba(120, 100, 100, 0.2) 225deg 225deg,
+      rgba(255, 199, 66, 0.4) 310deg 360deg
+     );
+
+    filter: blur(10px);
   }
 </style>

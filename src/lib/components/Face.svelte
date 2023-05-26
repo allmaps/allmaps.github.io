@@ -4,7 +4,7 @@
   export let src: string
 </script>
 
-<a {href} class="no-underline">
+<a {href} class="no-underline not-prose">
   <img class="w-6 inline-block rounded-lg" src="faces/{src}" alt={name} />
   <span class="underline">{name}</span>
 </a>
