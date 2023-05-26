@@ -59,7 +59,7 @@
     </p>
   </Card>
 
-  <Card title="Not just the browser" src="qgis.jpg" href="https://observablehq.com/@bertspaan/allmaps-tile-server">
+  <Card title="Not just the browser" src="qgis.jpg" href="https://observablehq.com/@allmaps/allmaps-tile-server">
     <p>
       Allmaps can export georeferenced maps to formats like GeoJSON or GeoTIFF. You can keep using your favorite scripting language, database or GIS.
     </p>
