@@ -101,12 +101,12 @@
     </div>
     <h1 class="text-white mt-0 mb-5 geograph">Allmaps</h1>
     <h2 class="text-white mt-0">
-      Curating, georeferencing and exploring IIIF maps
+      Tools for curating, georeferencing and exploring IIIF maps
     </h2>
     <p>
       100,000s of maps are available through IIIF, across libraries, archives
       and museums worldwide. Allmaps makes it easier and more inspiring to
-      explore, georeference and study collections of digitized maps.
+      work with collections of digitized maps.
     </p>
   </div>
 </header>
