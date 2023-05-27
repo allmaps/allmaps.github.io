@@ -101,7 +101,7 @@
     </div>
     <h1 class="text-white mt-0 mb-5 geograph">Allmaps</h1>
     <h2 class="text-white mt-0">
-      Curating, georeferencing and exploring IIIF maps
+      Curating, georeferencing and exploring IIIF for maps
     </h2>
     <p>
       100,000s of maps are available through IIIF, across libraries, archives
