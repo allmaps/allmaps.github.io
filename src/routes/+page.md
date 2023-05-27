@@ -1,5 +1,5 @@
 <script>
-  // import { MapMonster } from '@allmaps/ui'
+  import { MapMonster } from '@allmaps/ui'
 
   import Cards from '$lib/components/Cards.svelte'
   import Card from '$lib/components/Card.svelte'
@@ -94,12 +94,12 @@ Allmaps is supported and funded by the following organizations:
 - <a href="https://di.huc.knaw.nl/">Humanties Cluster Digital Infrastructure</a> and <a href="https://hisgis.nl/">HisGIS</a> of the
   <a href="https://www.knaw.nl/en">Royal Netherlands Academy of Arts and Sciences</a>
 
-</article>
-<!--
-<div class="p-4 pt-10 flex justify-end bottom-0">
-  <MapMonster>
+<div class="p-4 flex justify-end w-full sticky bottom-0">
+  <MapMonster mood="happy" color="pink">
     <div>
-      If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a href="mailto:hello@allmaps.org">send us an email</a>.
+      If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a class="text-white underline" href="mailto:hello@allmaps.org">send us an email</a>.
     </div>
   </MapMonster>
-</div> -->
+</div>
+
+</article>

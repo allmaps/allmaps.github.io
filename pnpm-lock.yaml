@@ -1,6 +1,9 @@
 lockfileVersion: '6.0'
 
 devDependencies:
+  '@allmaps/ui':
+    specifier: ^1.0.0-beta.15
+    version: link:../allmaps/packages/ui
   '@sveltejs/adapter-static':
     specifier: ^1.0.0
     version: 1.0.6(@sveltejs/kit@1.5.0)

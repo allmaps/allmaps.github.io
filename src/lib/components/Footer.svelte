@@ -2,7 +2,7 @@
   import Logo from '$lib/components/Logo.svelte'
 </script>
 
-<footer class="mt-24 h-72 flex justify-center items-center">
+<footer class="h-72 flex justify-center items-center">
   <div class="w-12">
     <Logo inverted />
   </div>
