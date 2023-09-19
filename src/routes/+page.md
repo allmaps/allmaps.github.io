@@ -96,12 +96,12 @@ Allmaps is supported and funded by the following organizations:
 - <a href="https://uwm.edu/libraries/agsl/">American Geographical Society Library</a> at the University of Wisconsin-Milwaukee
 - <a href="https://www.neh.gov/news/neh-announces-413-million-280-humanities-projects-nationwide">National Endowment for the Humanities</a>
 
-<div class="p-4 flex justify-end w-full sticky bottom-0">
+<!-- <div class="p-4 flex justify-end w-full sticky bottom-0">
   <MapMonster mood="happy" color="pink">
     <div>
       If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a class="text-white underline" href="mailto:hello@allmaps.org">send us an email</a>.
     </div>
   </MapMonster>
-</div>
+</div> -->
 
 </article>
