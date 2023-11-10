@@ -95,9 +95,8 @@ Allmaps is supported and funded by the following organizations:
 - <a href="https://www.leventhalmap.org/">Leventhal Map & Education Center</a> at the Boston Public Library
 - <a href="https://openhistoricalmap.org/">OpenHistoricalMap</a>
 - <a href="https://www.kb.nl/en">National Library of the Netherlands</a>
-- <a href="https://di.huc.knaw.nl/">Humanties Cluster Digital Infrastructure</a> and <a href="https://hisgis.nl/">HisGIS</a> of the
+- <a href="https://di.huc.knaw.nl/">Humanties Cluster Digital Infrastructure</a> and <a href="https://hisgis.nl/">HisGIS</a> of the <a href="https://www.knaw.nl/en">Royal Netherlands Academy of Arts and Sciences</a>
 - <a href="https://clariahvl.hypotheses.org/">CLARIAH-VL</a>
-- <a href="https://www.knaw.nl/en">Royal Netherlands Academy of Arts and Sciences</a>
 - <a href="https://uwm.edu/libraries/agsl/">American Geographical Society Library</a> at the University of Wisconsin-Milwaukee
 - <a href="https://www.neh.gov/news/neh-announces-413-million-280-humanities-projects-nationwide">National Endowment for the Humanities</a>
 
