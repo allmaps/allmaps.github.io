@@ -13,34 +13,25 @@
 
     <meta property="og:url" content="https://allmaps.org/" />
     <meta property="og:image" content="https://allmaps.org/allmaps-open-graph.jpg" />
-
-    <script async defer data-website-id="6acbc0f7-1959-4415-afda-1d16ddf8b766" src="https://stats.allmaps.org/umami.js"></script>
     
-		<link rel="modulepreload" href="/_app/immutable/entry/start.83f26da7.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index.fc748d2b.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/singletons.a65fd4f0.js">
-		<link rel="modulepreload" href="/_app/immutable/chunks/index.41319db7.js">
-		<link rel="modulepreload" href="/_app/immutable/entry/app.c39899a8.js">
+    <script async src="https://stats.allmaps.org/script.js" data-website-id="da41d63a-cad9-45db-95d8-58d755fea224"></script>
+    <meta http-equiv="content-security-policy" content="">
+		<link rel="modulepreload" href="/_app/immutable/start-3005c60b.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-c25b68b7.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/singletons-5f6b79de.js">
+		<link rel="modulepreload" href="/_app/immutable/chunks/index-ac9a580f.js">
   </head>
   <body>
     <div>
-			<script>
-				{
-					__sveltekit_bolu3a = {
-						base: "",
-						env: {}
-					};
+		<script type="module" data-sveltekit-hydrate="45h">
+			import { start } from "/_app/immutable/start-3005c60b.js";
 
-					const element = document.currentScript.parentElement;
-
-					Promise.all([
-						import("/_app/immutable/entry/start.83f26da7.js"),
-						import("/_app/immutable/entry/app.c39899a8.js")
-					]).then(([kit, app]) => {
-						kit.start(app, element);
-					});
-				}
-			</script>
-		</div>
+			start({
+				assets: "",
+				env: {},
+				target: document.querySelector('[data-sveltekit-hydrate="45h"]').parentNode,
+				version: "1708986074558"
+			});
+		</script></div>
   </body>
 </html>
