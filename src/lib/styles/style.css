@@ -1,66 +1,41 @@
 @font-face {
-  font-family: "Geograph";
+  font-family: 'Geograph';
   src: url('https://fonts.allmaps.org/geograph/geograph-light.woff2');
   font-weight: 300;
 }
 
 @font-face {
-  font-family: "Geograph";
+  font-family: 'Geograph';
   src: url('https://fonts.allmaps.org/geograph/geograph-regular.woff2');
   font-weight: normal;
 }
 
 @font-face {
-  font-family: "Geograph";
+  font-family: 'Geograph';
   src: url('https://fonts.allmaps.org/geograph/geograph-regular-italic.woff2');
   font-weight: normal;
   font-style: italic;
 }
 
 @font-face {
-  font-family: "Geograph";
+  font-family: 'Geograph';
   src: url('https://fonts.allmaps.org/geograph/geograph-medium.woff2');
   font-weight: 500;
 }
 
-
 @font-face {
-  font-family: "Geograph";
+  font-family: 'Geograph';
   src: url('https://fonts.allmaps.org/geograph/geograph-bold.woff2');
   font-weight: 700;
 }
 
 @tailwind base;
-/*
-@layer base {
-  h1 {
-    @apply text-4xl my-4 font-bold;
-  }
-
-  h2 {
-    @apply text-xl my-2 font-bold;
-  }
-
-  h3 {
-    @apply text-lg;
-  }
-
-  a {
-    @apply underline;
-  }
-
-  ol,
-  ul {
-    @apply ml-4 list-disc;
-  }
-
-  p, ol, ul {
-    @apply my-4;
-  }
-} */
-
 @tailwind components;
 @tailwind utilities;
+
+a[name] {
+  scroll-margin-top: 80px;
+}
 
 :root {
   /* Colors */
@@ -97,4 +72,3 @@
   /* Layout */
   --content-width: 540px;
 }
-

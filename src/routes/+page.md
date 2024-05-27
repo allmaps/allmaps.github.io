@@ -1,20 +1,37 @@
 <script>
-  import { MapMonster } from '@allmaps/ui'
+  import {onMount } from 'svelte'
+
+  import { MapMonster, Logo } from '@allmaps/ui'
+  import { Latest } from '@allmaps/latest'
 
   import { pink, white } from '@allmaps/tailwind'
 
   import Cards from '$lib/components/Cards.svelte'
   import Card from '$lib/components/Card.svelte'
   import About from '$lib/components/About.svelte'
+  import Data from '$lib/components/Data.svx'
 
   const speechBalloonBackgroundColor = pink
   const speechBalloonTextColor = white
+
+  let latestCount = 10
+
+  onMount(() => {
+    if (window.innerWidth < 640) {
+      latestCount = 5
+    } else if (window.innerWidth < 768) {
+      latestCount = 10
+    }
+
+    console.log(window.innerWidth, latestCount)
+
+  })
 </script>
 
 <Cards>
   <Card title="Works with any IIIF map" src="allmaps-editor.jpg" href="https://editor.allmaps.org/#/collection?url=https%3A%2F%2Fcdm21033.contentdm.oclc.org%2Fiiif%2Finfo%2Fkrt%2F2175%2Fmanifest.json">
     <p>
-      More and more institutions across the world are adopting <a href="https://iiif.io/">IIIF</a> to provide access to their collections of digitized images. Among all these images are 100,000s of maps.
+    More and more institutions across the world are adopting <a href="https://iiif.io/">IIIF</a> to provide access to their collections of digitized images. Among all these images are 100,000s of maps.
     </p>
     <p>
       With Allmaps, you can georeference any map from any institution by using its IIIF URL. Allmaps doesn't require complicated GIS infrastructure and it doesn't need to generate XYZ map tiles. All that's needed is a IIIF server.
@@ -72,20 +89,79 @@
       The <a href="https://observablehq.com/@allmaps/allmaps-tile-server">Allmaps Tile Server</a>, a tiny proxy server that turns Georeference Annotations into <a href="https://en.wikipedia.org/wiki/Tiled_web_map">XYZ map tile layers</a>, can be used to view warped maps in existing mapping websites or applications like QGIS.
     </p>
   </Card>
+
+  <Card title="Aerial photos & building plans" src="allmaps-viewer-building-plan.jpg" href="https://viewer.allmaps.org/?url=https%3A%2F%2Fsammeltassen.nl%2Fiiif-manifests%2Fallmaps%2Frivierahal-blijdorp.json">
+    <p>
+      Allmaps works with any IIIF resource that can be georeferenced. Maps hiding out as illustrations in books, newspapers or archival folders can be edited and viewed as well. Or other types of documents such as <a href="https://viewer.allmaps.org/?url=https%3A%2F%2Fsammeltassen.nl%2Fiiif-manifests%2Fallmaps%2Frivierahal-blijdorp.json">architectural drawings</a> or <a href="https://viewer.allmaps.org/?url=https%3A%2F%2Fannotations.allmaps.org%2Fimages%2F4bcc9463d2a68df4">aerial photographs</a>.
+    </p>
+    <p>
+      You can use Allmaps to study the past, but also to present contemporary maps or future proposals. In <a href="https://cityatlas.theberlage.nl/">education contexts</a>, it can be used to study a site accross different times and scales.
+    </p>
+  </Card>
 </Cards>
+
+<section class="prose m-auto">
+
+## <a name="getting-started"></a> Getting started
+
+<!-- TODO: consider using Astro Starlight for the homepage, and
+use the https://starlight.astro.build/guides/components/#steps component here -->
+
+- lijst van 10 mooie kaarten waarop mensen kunnen klikken
+
+https://www.leventhalmap.org/collections/
+
+https://www.leventhalmap.org/projects/digital-projects/georeferencing/
+
+</section>
+
+<Latest count={latestCount} showProperties={false} showUrls={false} />
+
+<section class="prose m-auto">
+
+- georeference annotation
+- lijst van instellingen
+- ook naar yaml
+
+## <a name="tools"></a> Tools
+
+- [Allmaps Editor](https://editor.allmaps.org/): georeference a map by entering its IIIF URL
+- [Allmaps Viewer](https://viewer.allmaps.org/): view georeferenced IIIF maps by entering the URL of a Georeference Annotation
+- [Allmaps Latest](https://latest.allmaps.org): the latest maps edited with Allmaps
+- [Allmaps CLI](https://github.com/allmaps/allmaps/tree/main/apps/cli): command-line interface for Allmaps
+- [Allmaps Tile Server](https://observablehq.com/@allmaps/allmaps-tile-server): proxy server that generates a XYZ map tile layer from IIIF maps georeferenced with Allmaps
+- Plugins for JavaScript mapping libraries:
+  - [Leaflet](https://observablehq.com/@allmaps/leaflet-plugin)
+  - [OpenLayers](https://observablehq.com/@allmaps/openlayers-plugin)
+  - [MapLibre](https://observablehq.com/@allmaps/maplibre-plugin)
+
+Other resources:
+
+- [GitHub repositories](https://github.com/allmaps)
+- [Observable notebooks](https://observablehq.com/@allmaps)
+
+## <a name="data"></a> Data
+
+<Data />
+
+## <a name="about"></a> About Allmaps
 
 <About />
 
-<article class="prose m-auto">
-Allmaps and its components are far from finished. For now, you can explore the following links:
+### Contributors
 
-- <a href="https://editor.allmaps.org/">Allmaps Editor</a>: georeference any IIIF map by entering the URL of a IIIF Manifest or IIIF Image
-- <a href="https://viewer.allmaps.org/">Allmaps Viewer</a>: warp a IIIF map by entering the URL or contents of a Georeference Annotation
-- <a href="https://latest.allmaps.org">Allmaps Latest</a>: The latest maps edited with Allmaps Editor
-- <a href="https://github.com/allmaps">GitHub repositories</a>
-- <a href="https://observablehq.com/@allmaps">Observable notebooks</a>
+- [Bert Spaan](https://bertspaan.nl/): Freelance creative technologist. Founder of Allmaps and lead developer.
+- [Jules Schoonman](https://www.tudelft.nl/en/staff/j.a.schoonman/): Digital curator at Delft University of Technology Library. Founder of Allmaps and lead for educational projects.
+- [Manuel Claeys Bouuaert](https://manuelclaeysbouuaert.be/): Freelance facilitator and cartographer. Developer and strategic thinker for Allmaps, expert in the mathematics that make it all work.
+- [Ian Spangler](https://www.leventhalmap.org/about/people/ian-spangler/): Assistant Curator of Digital & Participatory Geography at the Leventhal Map & Education Center. Director of the project supporting Allmaps' further development founded by the National Endowment for the Humanities (NEH).
+- [Luuk van de Ven](https://luukvandeven.nl/): Brand designer and art director. Art direction and wireframes for Allmaps.
+- [Bryan Haberberger](https://habesoftware.rocks/): Independent contractor and full stack developer at Saint Louis University. Independent consultant for the Georeference Extension.
 
-## Partners
+Other contributions have been made in the form of pull requests, issues or discussions on [GitHub](https://github.com/allmaps/), feedback and ideas provided in the [IIIF Maps Community Group](https://iiif.io/community/groups/maps/) and by our institutional partners.
+
+<div>
+
+### Partners
 
 Allmaps is supported and funded by the following organizations:
 
@@ -101,12 +177,15 @@ Allmaps is supported and funded by the following organizations:
 - <a href="https://www.neh.gov/news/neh-announces-413-million-280-humanities-projects-nationwide">National Endowment for the Humanities</a>
 
 <div class="p-4 flex justify-end w-full sticky bottom-0">
+<div class="drop-shadow-md">
   <MapMonster mood="happy" color="pink"
     {speechBalloonBackgroundColor}
     {speechBalloonTextColor}>
     <div>
-      If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a class="text-white underline" href="mailto:hello@allmaps.org">send us an email</a>.
+      If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a class="text-white underline" href="mailto:hello@allmaps.org">send us an email</a>. You can also reach us in the <code class="text-white">#allmaps</code> channel of the <a class="text-white underline" href="http://bit.ly/iiif-slack">IIIF Slack</a>.
     </div>
   </MapMonster>
+  </div>
 </div>
-</article>
+</div>
+</section>

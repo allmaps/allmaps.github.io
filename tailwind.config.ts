@@ -1,4 +1,5 @@
-import typegraphy from '@tailwindcss/typography'
+import typography from '@tailwindcss/typography'
+import containerQueries from '@tailwindcss/container-queries'
 
 import { theme } from '@allmaps/tailwind'
 
@@ -7,7 +8,8 @@ import type { Config } from 'tailwindcss'
 export default {
   content: [
     './src/**/*.{html,js,svelte,ts,md}',
-    './node_modules/@allmaps/ui/dist/components/**/*.{html,js,svelte,ts}'
+    './node_modules/@allmaps/ui/dist/components/**/*.{html,js,svelte,ts}',
+    './node_modules/@allmaps/latest/dist/components/**/*.{html,js,svelte,ts}'
   ],
   theme: {
     ...theme,
@@ -22,5 +24,5 @@ export default {
     }
   },
 
-  plugins: [typegraphy]
+  plugins: [typography, containerQueries]
 } satisfies Config

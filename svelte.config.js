@@ -1,5 +1,5 @@
 import adapter from '@sveltejs/adapter-static'
-import { vitePreprocess } from '@sveltejs/kit/vite'
+import { vitePreprocess } from '@sveltejs/vite-plugin-svelte'
 import { mdsvex } from 'mdsvex'
 
 const dev = process.env.NODE_ENV === 'development'
@@ -11,7 +11,7 @@ const config = {
       postcss: true
     }),
     mdsvex({
-      extensions: ['.md']
+      extensions: ['.md', '.svx']
     })
   ],
   kit: {
@@ -25,7 +25,7 @@ const config = {
       base: dev ? '' : ''
     }
   },
-  extensions: ['.svelte', '.md']
+  extensions: ['.svelte', '.md', '.svx']
 }
 
 export default config
