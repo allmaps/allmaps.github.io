@@ -3,7 +3,7 @@ import { Image } from 'astro:assets'
 
 const { name, href, src } = Astro.props
 
-const image = import(`../images/faces/${src}`)
+const image = import(`../images/faces/${src}.jpg`)
 ---
 
 <a {href} class="no-underline not-prose">
