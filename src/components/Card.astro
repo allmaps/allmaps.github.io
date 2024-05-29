@@ -1,0 +1,27 @@
+---
+import { Image } from 'astro:assets'
+
+const { title, src, href } = Astro.props
+
+const image = import(`../images/cards/${src}`)
+---
+
+<li
+  class="flex flex-col md:flex-row md:odd:flex-row-reverse items-center gap-8 md:gap-16"
+>
+  <div class="md:w-1/2 prose">
+    <h2>{title}</h2>
+    <slot />
+  </div>
+  <div class="md:w-1/2">
+    {
+      href ? (
+        <a {href} class="inline-block max-w-md">
+          <Image src={image} alt={title} />
+        </a>
+      ) : (
+        <Image src={image} alt={title} />
+      )
+    }
+  </div>
+</li>

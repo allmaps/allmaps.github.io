@@ -1,0 +1,12 @@
+---
+import { Image } from 'astro:assets'
+
+const { name, href, src } = Astro.props
+
+const image = import(`../images/faces/${src}`)
+---
+
+<a {href} class="no-underline not-prose">
+  <Image width="24" class="inline-block rounded-lg" src={image} alt={name} />
+  <span class="underline">{name}</span>
+</a>

@@ -1,5 +1,5 @@
 <script lang="ts">
-  import Logo from '$lib/components/Logo.svelte'
+  import { Logo } from '@allmaps/ui'
 
   const masks = [
     '1028.3,975.1 624.5,1017.6 659.3,1341.3 956.4,1310.1 945,1201.2 1051.7,1190',
@@ -63,7 +63,7 @@
 </script>
 
 <header
-  class="relative overflow-hidden flex justify-center items-center h-screen h-[100dvh] text-center mb-8 lg:mb-20"
+  class="relative overflow-hidden flex justify-center items-center h-screen min-h-[600px] text-center"
 >
   <svg
     class="background pointer-events-none"
@@ -76,14 +76,6 @@
     y="0px"
     viewBox="0 0 1600 1381"
   >
-    <defs>
-      <!-- <marker v-for="(mask, index) in masks"
-        :key="index" :id="`marker-${index}`"
-        viewBox="0 0 2 2" refX="1" refY="1" orient="auto"
-        markerWidth="2" markerHeight="2">
-        <circle cx="1" cy="1" r="1" :fill="styles[index].stroke" />
-      </marker> -->
-    </defs>
     {#each masks as mask, index}
       <path
         d={pointsToPath(maskToPoints(mask))}
@@ -120,19 +112,6 @@
       #25318f 0%,
       #101656 100%
     );
-  }
-
-  :root {
-    --geograph-ss01: 'ss01' off;
-    --geograph-ss02: 'ss02' off;
-    --geograph-ss03: 'ss03' off;
-    --geograph-tnum: 'tnum' off;
-  }
-
-  .geograph {
-    --geograph-ss03: 'ss03' on;
-    font-feature-settings: var(--geograph-ss01), var(--geograph-ss02),
-      var(--geograph-ss03), var(--geograph-tnum);
   }
 
   #masks {

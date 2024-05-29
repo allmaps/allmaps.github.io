@@ -1,11 +1,10 @@
 <script lang="ts">
-  import { DropdownMenu } from 'bits-ui'
-  import { Logo } from '@allmaps/ui'
+  // import { DropdownMenu } from 'bits-ui'
+  // import { Logo } from '@allmaps/ui'
 </script>
 
+<!--
 <div class="sticky w-full px-4 py-2 top-0 z-50 bg-white shadow-md">
-  <!-- max-w-[65ch] -->
-  <!-- max-w-screen-lg -->
   <nav
     class="mx-auto max-w-screen-lg text-sm md:text-base flex flex-row justify-between items-center gap-2 md:gap-6"
   >
@@ -50,4 +49,4 @@
       <div class="hidden"><a href="https://github.com/allmaps">GitHub</a></div>
     </div>
   </nav>
-</div>
+</div> -->
