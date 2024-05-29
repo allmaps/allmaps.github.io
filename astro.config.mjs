@@ -34,7 +34,9 @@ export default defineConfig({
         './src/css/tailwind.css',
         './src/css/fonts.css',
         './src/css/starlight.css'
-      ]
+      ],
+      themes: [ 'starlight-light'],
+      useStarlightDarkModeSwitch: false
     }),
     svelte(),
     tailwind({ applyBaseStyles: false })
