@@ -42,7 +42,8 @@ export default defineConfig({
       },
       components: {
         PageFrame: './src/components/overrides/PageFrame.astro',
-        PageTitle: './src/components/overrides/PageTitle.astro'
+        PageTitle: './src/components/overrides/PageTitle.astro',
+        ThemeProvider: './src/components/overrides/ThemeProvider.astro'
       },
       customCss: [
         './src/css/overrides.css',
