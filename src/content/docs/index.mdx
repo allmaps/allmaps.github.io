@@ -221,7 +221,7 @@ The core functionality of Allmaps is published on npm as individual JavaScript p
 Allmaps publishes the georeference data of __all maps__ georeferenced with Allmaps Editor as open data in different formats.
 This metadata contains the ground control points (GCPs), the clipping mask and pointers to the map's IIIF resource.
 
-<DataTable client:load />
+<DataTable client:load baseUrl={import.meta.env.VITE_DATA_FILES_BASE_URL} />
 
 The files above are updated twice per day. The data is licensed under
 [CCO](https://creativecommons.org/public-domain/cc0/).

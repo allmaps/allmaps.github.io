@@ -5,7 +5,11 @@ import svelte from '@astrojs/svelte'
 
 // import ports from '../../ports.json'
 
-// TODO: add stats
+const STATS_WEBSITE_ID = import.meta.env.VITE_STATS_WEBSITE_ID
+
+const isDevelop = import.meta.env.DEV
+const branch = isDevelop ? 'develop' : 'main'
+const editLinkBaseUrl = `https://github.com/allmaps/allmaps.github.io/tree/${branch}/`
 
 export default defineConfig({
   server: {
@@ -21,11 +25,20 @@ export default defineConfig({
       logo: {
         src: './src/images/allmaps-logo.svg'
       },
+      head: [
+        STATS_WEBSITE_ID && {
+          tag: 'script',
+          attrs: {
+            async: true,
+            src: 'https://stats.allmaps.org/script.js',
+            'data-website-id': STATS_WEBSITE_ID
+          }
+        }
+      ],
       favicon: '/favicon.png',
       sidebar: [],
       editLink: {
-        // TODO: pick main or develop branch depending on NODE_ENV or something similar
-        baseUrl: 'https://github.com/allmaps/allmaps/tree/develop/apps/docs/'
+        baseUrl: editLinkBaseUrl
       },
       components: {
         PageFrame: './src/components/overrides/PageFrame.astro',
@@ -36,7 +49,7 @@ export default defineConfig({
         './src/css/tailwind.css',
         './src/css/fonts.css',
         './src/css/starlight.css'
-      ],
+      ]
     }),
     svelte(),
     tailwind({ applyBaseStyles: false })

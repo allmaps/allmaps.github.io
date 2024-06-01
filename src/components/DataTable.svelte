@@ -1,7 +1,7 @@
 <script lang="ts">
   import { onMount } from 'svelte'
 
-  const baseUrl = 'https://pub-073597ae464e4b54b70bb56886a2ccb6.r2.dev'
+  export let baseUrl: string
 
   const files = [
     {
@@ -35,8 +35,7 @@
 
   onMount(() => {
     files.forEach((file, index) => {
-      // TODO: get base URL for data files from config/env
-      const url = `https://pub-073597ae464e4b54b70bb56886a2ccb6.r2.dev/${file.filename}`
+      const url = `${baseUrl}${file.filename}`
       fetch(url, { method: 'HEAD' }).then((response) => {
         if (response.ok) {
           const contentLength = response.headers.get('Content-Length')
@@ -63,7 +62,7 @@
     {#each files as file}
       <tr>
         <td>
-          <a href={`${baseUrl}/${file.filename}`}>
+          <a href={`${baseUrl}${file.filename}`}>
             <code>{file.filename}</code>
           </a>
         </td>
