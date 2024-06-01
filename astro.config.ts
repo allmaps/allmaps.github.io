@@ -5,6 +5,8 @@ import svelte from '@astrojs/svelte'
 
 // import ports from '../../ports.json'
 
+// TODO: add stats
+
 export default defineConfig({
   server: {
     // port: ports.docs,
@@ -35,8 +37,6 @@ export default defineConfig({
         './src/css/fonts.css',
         './src/css/starlight.css'
       ],
-      themes: [ 'starlight-light'],
-      useStarlightDarkModeSwitch: false
     }),
     svelte(),
     tailwind({ applyBaseStyles: false })
