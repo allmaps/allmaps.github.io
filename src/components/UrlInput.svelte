@@ -1,13 +1,12 @@
 <script lang="ts">
   export let placeholder: string
   export let baseUrl: string
-  export let buttonText: string = 'View'
 
   let value = ''
 
   function handleSubmit() {
     const url = `${baseUrl}${value}`
-    window.open(url, '_blank').focus()
+    window.open(url, '_blank')?.focus()
   }
 
   $: disabled = value.length === 0
@@ -18,14 +17,14 @@
     bind:value
     type="text"
     {placeholder}
-    class="font-mono block mb-3 px-2 py-1 w-full rounded-lg border border-gray-300 focus-within:ring-1 focus-within:ring-pink-500 focus-within:border-pink-500 text-sm"
+    class="font-mono block px-2 py-1 w-full rounded-lg border border-gray-300 focus-within:ring-1 focus-within:ring-pink-500 focus-within:border-pink-500 text-sm"
   />
 
   <button
     type="submit"
     {disabled}
-    class="text-white bg-pink-500 hover:bg-pink-400 no-underline transition-colors disabled:bg-gray-500 focus:ring focus:ring-pink-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 focus:outline-none"
+    class="text-white bg-pink-500 hover:bg-pink-400 no-underline transition-colors disabled:bg-gray-500 focus:ring focus:ring-pink-200 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 focus:outline-none"
   >
-    {buttonText}
+    Open
   </button>
 </form>

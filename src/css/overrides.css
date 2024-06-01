@@ -39,3 +39,12 @@ html:not([data-has-sidebar]) {
 .sl-steps > li {
   counter-increment: sl-steps;
 }
+
+.sl-steps > li p:last-child {
+  margin-bottom: 0;
+}
+
+.sl-markdown-content a {
+  color: var(--sl-color-text-accent);
+}
+

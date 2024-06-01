@@ -35,6 +35,7 @@
 
   onMount(() => {
     files.forEach((file, index) => {
+      // TODO: get base URL for data files from config/env
       const url = `https://pub-073597ae464e4b54b70bb56886a2ccb6.r2.dev/${file.filename}`
       fetch(url, { method: 'HEAD' }).then((response) => {
         if (response.ok) {
@@ -49,10 +50,6 @@
     return size ? `${Math.round(size / 1024 / 1024)} MB` : ''
   }
 </script>
-
-The following files contain the metadata of <strong
-  >all maps georeferenced with Allmaps</strong
->, in {files.length} different formats:
 
 <table>
   <thead>
@@ -82,6 +79,3 @@ The following files contain the metadata of <strong
     {/each}
   </tbody>
 </table>
-
-The files above are updated twice per day. The data is licensed under
-<a href="https://creativecommons.org/public-domain/cc0/">CCO</a>.
