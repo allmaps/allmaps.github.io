@@ -25,16 +25,18 @@ export default defineConfig({
       logo: {
         src: './src/images/allmaps-logo.svg'
       },
-      head: [
-        STATS_WEBSITE_ID && {
-          tag: 'script',
-          attrs: {
-            async: true,
-            src: 'https://stats.allmaps.org/script.js',
-            'data-website-id': STATS_WEBSITE_ID
-          }
-        }
-      ],
+      head: STATS_WEBSITE_ID
+        ? [
+            {
+              tag: 'script',
+              attrs: {
+                async: true,
+                src: 'https://stats.allmaps.org/script.js',
+                'data-website-id': STATS_WEBSITE_ID
+              }
+            }
+          ]
+        : undefined,
       favicon: '/favicon.png',
       sidebar: [],
       editLink: {

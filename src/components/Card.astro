@@ -7,9 +7,9 @@ const image = import(`../images/cards/${src}.jpg`)
 ---
 
 <li
-  class="flex flex-col md:flex-row md:odd:flex-row-reverse items-center gap-8 md:gap-16"
+  class="flex flex-col md:flex-row md:odd:flex-row-reverse items-center gap-0 sm:gap-8 md:gap-16"
 >
-  <div class="md:w-1/2 prose not-content">
+  <div class="md:w-1/2 prose prose-sm sm:prose-base xl:prose-lg not-content">
     <h2>{title}</h2>
     <slot />
   </div>
