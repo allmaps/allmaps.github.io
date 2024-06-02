@@ -24,6 +24,11 @@ html:not([data-has-sidebar]) {
   /* --sl-content-width: 48rem !important; */
 }
 
+.site-title {
+  color: black;
+  font-weight: bold;
+}
+
 .sl-container {
   margin: auto;
 }
