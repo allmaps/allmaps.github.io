@@ -1,7 +1,26 @@
 {
-  "name": "homepage-new",
+  "name": "@allmaps/hompage",
   "type": "module",
-  "version": "0.0.1",
+  "author": {
+    "name": "Bert Spaan",
+    "email": "hello@bertspaan.nl",
+    "url": "https://bertspaan.nl"
+  },
+  "description": "Allmaps homepage and documentation website",
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/allmaps/allmaps.github.io.git"
+  },
+  "homepage": "https://allmaps.org",
+  "keywords": [
+    "allmaps",
+    "iiif",
+    "georeferencing",
+    "map"
+  ],
   "scripts": {
     "dev": "astro dev",
     "start": "astro dev",
