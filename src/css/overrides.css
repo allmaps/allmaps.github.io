@@ -46,5 +46,6 @@ html:not([data-has-sidebar]) {
 
 .sl-markdown-content a {
   color: var(--sl-color-text-accent);
+  text-decoration: underline;
+  font-weight: 500;
 }
-
