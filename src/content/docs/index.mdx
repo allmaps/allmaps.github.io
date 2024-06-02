@@ -37,15 +37,15 @@ export const speechBalloonTextColor = white
       their collections of digitized images. Among all these images are 100,000s of maps.
       </p>
       <p>
-        With Allmaps, you can georeference any map from any institution by using its IIIF URL. Allmaps doesn't require
+        With Allmaps, you can georeference any map from any institution that supports IIIF. Allmaps doesn't require
         complicated GIS infrastructure and it doesn't need to generate XYZ map tiles. All that's needed is a IIIF server.
       </p>
     </Card>
 
     <Card title="Built on open standards" src="georef-annotation" href="https://iiif.io/api/extension/georef/">
       <p>
-        All components of Allmaps rely on <a href="https://iiif.io/api/extension/georef/">Georeference Annotations</a>
-        that hold information about each map’s georeference data. Georeference Annotations are based on W3C's
+        All components of Allmaps use <a href="https://iiif.io/api/extension/georef/">Georeference Annotations</a>
+        that hold each map's georeference data. Georeference Annotations are based on W3C's
         <a href="https://www.w3.org/TR/annotation-model/">Web Annotation standard</a> and are an
         <a href="https://iiif.io/api/index.html#approved-extensions">approved extension</a> to the IIIF Presentation API.
       </p>
@@ -58,9 +58,8 @@ export const speechBalloonTextColor = white
       </p>
       <p>
         To warp a map, Allmaps uses the <a href="https://iiif.io/api/image/3.0/#4-image-requests">IIIF Image API</a> to only
-        download the portion of the image that's needed, in the right scale. The
-        <a href="https://viewer.allmaps.org/?url=https%3A%2F%2Fannotations.allmaps.org%2Fmanifests%2Fc390af06ea724803">new
-        version of Allmaps Viewer</a> can even stitch together hundreds of maps at the same time.
+        download the portion of the image that's needed, in the right scale.
+        <a href="https://viewer.allmaps.org/?url=https%3A%2F%2Fannotations.allmaps.org%2Fmanifests%2Fc390af06ea724803">Allmaps Viewer</a> can stitch maps that are composed of multiple sheets together in real-time.
       </p>
     </Card>
 
@@ -141,7 +140,7 @@ export const speechBalloonTextColor = white
 
 <Steps>
 
-1. Find a map in the digital collections of an institution that provides access to their digitized maps through IIIF. For example:
+1. Find a map in the digital collections of an institution or public repository that supports IIIF. For example:
 
     - [Leventhal Map & Education Center](https://collections.leventhalmap.org/search?utf8=%E2%9C%93&q=)
     - [American Geographical Society Library](https://collections.lib.uwm.edu/digital/collection/agdm/search/searchterm/)
@@ -170,13 +169,6 @@ export const speechBalloonTextColor = white
 
 ## Examples
 
-{/* TODO: show list of curated maps georeferenced with Allmaps */}
-{/* Ideas:
-  - Los Angeles city blocks
-  - rotterdam 12 bladen
-  - vienna
-  -
-*/}
 
 The latest maps georeferenced with Allmaps Editor:
 
@@ -211,7 +203,7 @@ The core functionality of Allmaps is published on npm as individual JavaScript p
 - [`@allmaps/transform`](https://github.com/allmaps/allmaps/tree/main/packages/transform): transforms pixel coordinates to geospatial coordinates
     (and vice versa) using the ground control points (GCPs) from a parsed Georeference Annotation.
 - [`@allmaps/render`](https://github.com/allmaps/allmaps/tree/main/packages/render): renders georeferenced maps with WebGL,
-    with the Canvas 2D API or as raw pixel values.
+    with the Canvas API or as raw pixel values.
 - [`@allmaps/id`](https://github.com/allmaps/allmaps/tree/main/packages/id): uses the SHA-1 hashing algorithm to turn
     IIIF URLs into the identifiers used internally by Allmaps.
 - More packages and apps can be found in the [Allmaps monorepo](https://github.com/allmaps/allmaps) on GitHub.
