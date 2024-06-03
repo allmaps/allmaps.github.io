@@ -88,7 +88,7 @@
   </svg>
 
   <div class="flex flex-col items-center w-96 p-4 prose text-white">
-    <div class="w-24 mb-3">
+    <div class="w-24">
       <Logo inverted />
     </div>
     <h1 class="text-white mt-0 mb-5 geograph">Allmaps</h1>

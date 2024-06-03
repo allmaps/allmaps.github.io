@@ -1,6 +1,7 @@
 {
   "name": "@allmaps/hompage",
   "type": "module",
+  "version": "2.0.0-beta-0",
   "author": {
     "name": "Bert Spaan",
     "email": "hello@bertspaan.nl",
