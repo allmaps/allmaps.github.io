@@ -1,5 +1,5 @@
 ---
-import { Image } from 'astro:assets'
+import { Picture } from 'astro:assets'
 
 const { title, src, href } = Astro.props
 
@@ -14,14 +14,8 @@ const image = import(`../images/cards/${src}.jpg`)
     <slot />
   </div>
   <div class="md:w-1/2">
-    {
-      href ? (
-        <a {href} class="inline-block max-w-md">
-          <Image src={image} alt={title} />
-        </a>
-      ) : (
-        <Image src={image} alt={title} />
-      )
-    }
+    <a {href} class="inline-block max-w-md">
+      <Picture src={image} alt={title} densities={[1.5, 2]} />
+    </a>
   </div>
 </li>

@@ -20,6 +20,7 @@ import { pink, white } from '@allmaps/tailwind'
 import Wider from '../../components/Wider.astro'
 import Card from '../../components/Card.astro'
 import Cards from '../../components/Cards.astro'
+import Example from '../../components/Example.astro'
 import Examples from '../../components/Examples.astro'
 import DataTable from '../../components/DataTable.svelte'
 import UrlInput from '../../components/UrlInput.svelte'
@@ -134,10 +135,9 @@ export const speechBalloonTextColor = white
   </Cards>
 </Wider>
 
-<section class="not-content prose prose-sm sm:prose-base xl:prose-lg m-auto">
+<section class="contents not-content prose prose-sm sm:prose-base xl:prose-lg m-auto">
 
 ## Getting started
-
 
 <Steps>
 
@@ -147,6 +147,7 @@ export const speechBalloonTextColor = white
     - [American Geographical Society Library](https://collections.lib.uwm.edu/digital/collection/agdm/search/searchterm/)
     - [Leiden University Libraries](https://digitalcollections.universiteitleiden.nl/islandora/search?type=dismax&islandora_solr_search_navigation=0&f%5B0%5D=RELS_EXT_isMemberOfCollection_uri_ms:%22info%5C:fedora%5C/collection%5C:ubl_maps%22)
     - [Library of Congress](https://loc.gov/maps)
+    - [Internet Archive](https://iiif.io/guides/guides/archive.org/)
     - Many other institutions around the world with IIIF-enabled map collections can be found in [this list](https://github.com/allmaps/iiif-map-collections).
 
 2. Find the URL of the IIIF resource of the map you want to use and copy the URL to your clipboard. Often, you can find this URL by clicking the IIIF logo somewhere on the web page that displays the digitized map.
@@ -170,11 +171,39 @@ export const speechBalloonTextColor = white
 
 ## Examples
 
-<Examples />
+A few examples of maps georeferenced with Allmaps:
 
-The latest maps georeferenced with Allmaps Editor:
+<div class="contents reset-lists not-prose">
+  <Wider>
+    {/* Consider adding:
+    - Vienna: https://annotations.allmaps.org/maps/751ae05935adba4f
+    - Beijng https://annotations.allmaps.org/maps/8350fc8ec1585e60
+    - Tokyo https://annotations.allmaps.org/maps/99d0daaaf937d93e */}
+    <Examples>
+      <Example
+        src="manifests-631b96e4d6d3f421"
+        title="Plattegrond van Rotterdam in 10 bladen (1895 - 1897)"
+        institution="Stadsarchief Rotterdam"
+        annotationUrl="https://annotations.allmaps.org/manifests/631b96e4d6d3f421" />
+      <Example
+        src="manifests-23379602e8187445"
+        title="Atlas of the city of Lynn, Massachusetts"
+        institution="Leventhal Map & Education Center"
+        annotationUrl="https://annotations.allmaps.org/manifests/23379602e8187445" />
+      <Example
+        src="manifests-64d6e35b64564692"
+        title="Nirenstein Atlas, Hollywood, 1956"
+        institution="Los Angeles Public Library"
+        annotationUrl="https://annotations.allmaps.org/manifests/64d6e35b64564692" />
 
-<div class="reset-lists not-prose">
+
+    </Examples>
+  </Wider>
+</div>
+
+The latest maps georeferenced with Allmaps:
+
+<div class="contents reset-lists not-prose">
   <Latest client:load count={12} showProperties={false} showUrls={false} />
 </div>
 
@@ -182,13 +211,14 @@ You can view more recent maps in [Allmaps Latest](https://latest.allmaps.org).
 
 ## Tools
 
-- The structure of a Georeference Annotation is described in the specification of the [IIIF Georeference Extension](https://iiif.io/api/index.html#approved-extensions).
-- [Allmaps Editor](https://editor.allmaps.org/): georeference a map by entering the URL of its IIIF resource.
+- [Georeference Annotation](https://iiif.io/api/extension/georef/): specification of the data format used by Allmaps.
+- [Allmaps Editor](https://editor.allmaps.org/): georeference a map by entering the URL of a IIIF resource.
 - [Allmaps Viewer](https://viewer.allmaps.org/): view georeferenced maps by entering the URL of a Georeference Annotation.
 - [Allmaps Latest](https://latest.allmaps.org): the latest maps georeferenced with Allmaps.
 - [Allmaps CLI](https://github.com/allmaps/allmaps/tree/main/apps/cli): command-line interface for Allmaps.
-- [Allmaps Tile Server](https://observablehq.com/@allmaps/allmaps-tile-server): proxy server that generates a XYZ map tile layer from IIIF maps georeferenced with Allmaps. You can use the Allmaps Tile Server to display warped maps in applications like QGIS.
-- More tools and experiments can be found on [GitHub](https://github.com/allmaps) or on [Observable](https://observablehq.com/@allmaps).
+- [Allmaps Tile Server](https://observablehq.com/@allmaps/allmaps-tile-server): proxy server that generates an XYZ map tile
+  layer from one or more Georeference Annotations. You can use the Allmaps Tile Server to display warped maps in applications like QGIS.
+- More tools and experiments can be found on [GitHub](https://github.com/allmaps) and [Observable](https://observablehq.com/@allmaps).
 
 ### Plugins
 
@@ -210,7 +240,7 @@ The core functionality of Allmaps is published on npm as individual JavaScript p
     IIIF URLs into the identifiers used internally by Allmaps.
 - More packages and apps can be found in the [Allmaps monorepo](https://github.com/allmaps/allmaps) on GitHub.
 
-## Data
+## Open data
 
 Allmaps publishes the georeference data of __all maps__ georeferenced with Allmaps Editor as open data in different formats.
 This metadata contains the ground control points (GCPs), the clipping mask and pointers to the map's IIIF resource.
@@ -258,7 +288,7 @@ Allmaps is supported and funded by the following organizations:
     <MapMonster mood="happy" color="pink"
       speechBalloonBackgroundColor={speechBalloonBackgroundColor}
       speechBalloonTextColor={speechBalloonTextColor}>
-      <div class="[&>a]:text-white">If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a class="text-white underline" href="mailto:hello@allmaps.org">send us an email</a>. You can also reach us in the <code class="text-white">#allmaps</code> channel of the <a class="text-white underline" href="http://bit.ly/iiif-slack">IIIF&nbsp;Slack</a>.</div>
+      <div class="[&>a]:text-white">If you think Allmaps can be useful for your institution or if you have questions about the project, you can <a class="text-white underline" href="mailto:hello@allmaps.org">send us an email</a> or reach us in the <code class="text-white">#allmaps</code> channel of the <a class="text-white underline" href="http://bit.ly/iiif-slack">IIIF&nbsp;Slack</a>.</div>
     </MapMonster>
   </div>
 </div>
