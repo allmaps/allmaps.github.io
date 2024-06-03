@@ -11,6 +11,9 @@ importers:
       '@allmaps/id':
         specifier: ^1.0.0-beta.27
         version: 1.0.0-beta.27
+      '@allmaps/latest':
+        specifier: ^1.0.0-beta.32
+        version: 1.0.0-beta.32(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.16)(vite@5.2.11))(svelte@4.2.16)(vite@5.2.11))(svelte@4.2.16)
       '@allmaps/tailwind':
         specifier: ^1.0.0-beta.12
         version: 1.0.0-beta.12
@@ -68,6 +71,9 @@ importers:
 
 packages:
 
+  '@allmaps/annotation@1.0.0-beta.27':
+    resolution: {integrity: sha512-Dwe8zBoknN5KoQo+sUxvTMh7c3H0qnyVgEo8X9Qz0MyBHz7pm943r91ePgz4y9c78GpEm8EAPPR2vJo6kQxnww==}
+
   '@allmaps/id@1.0.0-beta.27':
     resolution: {integrity: sha512-SAJPXHwrAbNIzjfHHJWGNox6KN3JcxWt5rRWmOFlDyq/MEyPIEMjGhpMGv5YLjou0kC9VMAYqQyOGXXns/jMFw==}
     engines: {node: '>=v19.0.0'}
@@ -75,8 +81,19 @@ packages:
   '@allmaps/iiif-parser@1.0.0-beta.37':
     resolution: {integrity: sha512-za7zI0P4qLpO+JsOxHrRdQuamfm6WUYv/5G/0wMX/0QdTHfymLNO27biNdy2UIY43gbw1XmeVlp6HD0JhZoc1g==}
 
+  '@allmaps/latest@1.0.0-beta.32':
+    resolution: {integrity: sha512-AJzvxE/vToE/j1XmLy3j3/INml0JnGXuMsR9pdhQUPkJe2z3HyxMIJaPnKpeM0/IFzHo67a4AyUQphIBPWLskA==}
+    peerDependencies:
+      svelte: ^4.0.0
+
+  '@allmaps/stdlib@1.0.0-beta.28':
+    resolution: {integrity: sha512-Ss200J31nvHvVMp+Ri6efTzd+ZbRkE1PgiVsTqru4ZD+af7yTDMf5wp/P5dhLo/eZVieKFM4dXNZAwGz3LnqvQ==}
+
   '@allmaps/tailwind@1.0.0-beta.12':
     resolution: {integrity: sha512-HDOH5wB9eXTTTGsgJ2Cm6hlXKlyBU4PVJ+KH6HqTF01aJFmpUnRFth5eUdfI9u7vWMynAZrwhSBliVIRwDBVQg==}
+
+  '@allmaps/transform@1.0.0-beta.38':
+    resolution: {integrity: sha512-HHYsFpnsXqarpWUo2WDqlEANj13N+jyNG46nEajYq/+LUpOuEwr5inkCKjsRWbZpUPBKkmwOOqW3YTtg8f6u4A==}
 
   '@allmaps/types@1.0.0-beta.13':
     resolution: {integrity: sha512-X/OPatNULf8c7Dnq90Wq6Kg6xaRaq+DbF0CFO/JkoQxMjH30OqGmNvAIPhtqLqdTvhO7XWzpkoFsXRqCuKNoNg==}
@@ -790,6 +807,9 @@ packages:
     resolution: {integrity: sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==}
     engines: {node: '>=14'}
 
+  '@placemarkio/geojson-rewind@1.0.2':
+    resolution: {integrity: sha512-ulBdZOCvKlUIe9v+/PDVfe4wDvfkJRzRXstGEHbAJGiUN8IDYw3wD3156DcN/rO9DiHfjcF8KUQlQ7iiMd+rrA==}
+
   '@polka/url@1.0.0-next.25':
     resolution: {integrity: sha512-j7P6Rgr3mmtdkeDGTe0E/aYyWEWVtc5yFXtHCRHs28/jptDEWfaVOc5T7cblqy1XKPPfCxJc/8DwQ5YgLOZOVQ==}
 
@@ -912,6 +932,36 @@ packages:
     resolution: {integrity: sha512-ADGcJ8dX21dVVHIwTRgzrcunY6YY9uSlAHHGVKvkA+vLc5qLwEszvKts40lx7z0qc4clpjclwLeK5rVCV2P/uw==}
     peerDependencies:
       tailwindcss: '>=3.0.0 || insiders'
+
+  '@turf/bearing@6.5.0':
+    resolution: {integrity: sha512-dxINYhIEMzgDOztyMZc20I7ssYVNEpSv04VbMo5YPQsqa80KO3TFvbuCahMsCAW5z8Tncc8dwBlEFrmRjJG33A==}
+
+  '@turf/boolean-clockwise@6.5.0':
+    resolution: {integrity: sha512-45+C7LC5RMbRWrxh3Z0Eihsc8db1VGBO5d9BLTOAwU4jR6SgsunTfRWR16X7JUwIDYlCVEmnjcXJNi/kIU3VIw==}
+
+  '@turf/clone@6.5.0':
+    resolution: {integrity: sha512-mzVtTFj/QycXOn6ig+annKrM6ZlimreKYz6f/GSERytOpgzodbQyOgkfwru100O1KQhhjSudKK4DsQ0oyi9cTw==}
+
+  '@turf/destination@6.5.0':
+    resolution: {integrity: sha512-4cnWQlNC8d1tItOz9B4pmJdWpXqS0vEvv65bI/Pj/genJnsL7evI0/Xw42RvEGROS481MPiU80xzvwxEvhQiMQ==}
+
+  '@turf/distance@6.5.0':
+    resolution: {integrity: sha512-xzykSLfoURec5qvQJcfifw/1mJa+5UwByZZ5TZ8iaqjGYN0vomhV9aiSLeYdUGtYRESZ+DYC/OzY+4RclZYgMg==}
+
+  '@turf/helpers@6.5.0':
+    resolution: {integrity: sha512-VbI1dV5bLFzohYYdgqwikdMVpe7pJ9X3E+dlr425wa2/sMJqYDhTO++ec38/pcPvPE6oD9WEEeU3Xu3gza+VPw==}
+
+  '@turf/invariant@6.5.0':
+    resolution: {integrity: sha512-Wv8PRNCtPD31UVbdJE/KVAWKe7l6US+lJItRR/HOEW3eh+U/JwRCSUl/KZ7bmjM/C+zLNoreM2TU6OoLACs4eg==}
+
+  '@turf/meta@6.5.0':
+    resolution: {integrity: sha512-RrArvtsV0vdsCBegoBtOalgdSOfkBrTJ07VkpiCnq/491W67hnMWmDu7e6Ztw0C3WldRYTXkg3SumfdzZxLBHA==}
+
+  '@turf/midpoint@6.5.0':
+    resolution: {integrity: sha512-MyTzV44IwmVI6ec9fB2OgZ53JGNlgOpaYl9ArKoF49rXpL84F9rNATndbe0+MQIhdkw8IlzA6xVP4lZzfMNVCw==}
+
+  '@turf/rewind@6.5.0':
+    resolution: {integrity: sha512-IoUAMcHWotBWYwSYuYypw/LlqZmO+wcBpn8ysrBNbazkFNkLf3btSDZMkKJO/bvOzl55imr/Xj4fi3DdsLsbzQ==}
 
   '@types/acorn@4.0.6':
     resolution: {integrity: sha512-veQTnWP+1D/xbxVrPC3zHnCZRjSrKfhbMUlEA43iMZLu7EsnTtkJklIuwrCPbOi8YkvDQAiW05VQQFvvz9oieQ==}
@@ -1286,6 +1336,14 @@ packages:
     resolution: {integrity: sha512-/Tb/JcjK111nNScGob5MNtsntNM1aCNUDipB/TkwZFhyDrrE47SOx/18wF2bbjgc3ZzCSKW1T5nt5EbFoAz/Vg==}
     engines: {node: '>=4'}
     hasBin: true
+
+  d3-array@3.2.4:
+    resolution: {integrity: sha512-tdQAmyA18i4J7wprpYq8ClcxZy3SC31QMeByyCFyRt7BVHdREQZ5lpzoe5mFEYZUWe+oq8HBvk9JjpibyEV4Jg==}
+    engines: {node: '>=12'}
+
+  d3-geo@3.1.1:
+    resolution: {integrity: sha512-637ln3gXKXOwhalDzinUgY83KzNWZRKbYubaG+fGVuc/dxO64RRljtCTnf5ecMyE1RIdtqpkVcq0IbtU2S8j2Q==}
+    engines: {node: '>=12'}
 
   debug@4.3.4:
     resolution: {integrity: sha512-PRWFHuSU3eDtQJPvnNY7Jcket1j0t5OuOsFzPPzsekD52Zl8qUfFIPEiswXqIvHWGVHOgX+7G/vCNNhehwxfkQ==}
@@ -1740,11 +1798,18 @@ packages:
   inline-style-parser@0.2.3:
     resolution: {integrity: sha512-qlD8YNDqyTKTyuITrDOffsl6Tdhv+UC4hcdAVuQsK4IMQ99nSgd1MIA/Q+jQYoh9r3hVUXhYh7urSRmXPkW04g==}
 
+  internmap@2.0.3:
+    resolution: {integrity: sha512-5Hh7Y1wQbvY5ooGgPbDaL5iYLAPzMTUrjMulskHLH6wnv/A+1q5rgEaiuqEjB+oxGXIVZs1FF+R/KPN3ZSQYYg==}
+    engines: {node: '>=12'}
+
   is-alphabetical@2.0.1:
     resolution: {integrity: sha512-FWyyY60MeTNyeSRpkM2Iry0G9hpr7/9kD40mD/cGQEuilcZYS4okz8SN2Q6rLCJ8gbCt6fN+rC+6tMGS99LaxQ==}
 
   is-alphanumerical@2.0.1:
     resolution: {integrity: sha512-hmbYhX/9MUMF5uh7tOXyK/n0ZvWpad5caBA17GsC6vyuCqaWliRG5K1qS9inmUhEMaOBIW7/whAnSwveW/LtZw==}
+
+  is-any-array@2.0.1:
+    resolution: {integrity: sha512-UtilS7hLRu++wb/WBAw9bNuP1Eg04Ivn1vERJck8zJthEvXCBEBpGR/33u/xLKWEQf95803oalHrVDptcAvFdQ==}
 
   is-arrayish@0.3.2:
     resolution: {integrity: sha512-eVRqCvVlZbuw3GrM63ovNSNAeA1K16kaR/LRY/92w0zxQ5/1YzwblUX652i4Xs9RwAGjW9d9y6X88t8OaAJfWQ==}
@@ -2160,6 +2225,18 @@ packages:
 
   mkdirp-classic@0.5.3:
     resolution: {integrity: sha512-gKLcREMhtuZRwRAfqP3RFW+TK4JqApVBtOIftVgjuABpAtpxhPGaDcfvbhNvD0B8iD1oUr/txX35NjcaY6Ns/A==}
+
+  ml-array-max@1.2.4:
+    resolution: {integrity: sha512-BlEeg80jI0tW6WaPyGxf5Sa4sqvcyY6lbSn5Vcv44lp1I2GR6AWojfUvLnGTNsIXrZ8uqWmo8VcG1WpkI2ONMQ==}
+
+  ml-array-min@1.2.3:
+    resolution: {integrity: sha512-VcZ5f3VZ1iihtrGvgfh/q0XlMobG6GQ8FsNyQXD3T+IlstDv85g8kfV0xUG1QPRO/t21aukaJowDzMTc7j5V6Q==}
+
+  ml-array-rescale@1.3.7:
+    resolution: {integrity: sha512-48NGChTouvEo9KBctDfHC3udWnQKNKEWN0ziELvY3KG25GR5cA8K8wNVzracsqSW1QEkAXjTNx+ycgAv06/1mQ==}
+
+  ml-matrix@6.11.0:
+    resolution: {integrity: sha512-7jr9NmFRkaUxbKslfRu3aZOjJd2LkSitCGv+QH9PF0eJoEG7jIpjXra1Vw8/kgao8+kHCSsJONG6vfWmXQ+/Eg==}
 
   mri@1.2.0:
     resolution: {integrity: sha512-tzzskb3bG8LvYGFF/mDTpq3jpI6Q9wc3LEmBaghu+DdCssd1FakN7Bc0hVNmEyGq1bq3RgfkCb3cmQLpNPOroA==}
@@ -2732,6 +2809,9 @@ packages:
     resolution: {integrity: sha512-mQwHpqHD2PmFcCyHaZ7XiTqposaLvJ75WpYcyY5/ce3qxbYtwQpZ+M7ZKP+2CG5U6kfnBZBpPLyofhlE6ROrnQ==}
     engines: {node: '>=16'}
 
+  svg-parser@2.0.4:
+    resolution: {integrity: sha512-e4hG1hRwoOdRb37cIMSgzNsxyzKfayW6VOflrwvR+/bzrkyxY/31WkbgnQpgtrNp1SdpJvpUAGTa/ZoiPNDuRQ==}
+
   tailwindcss@3.4.3:
     resolution: {integrity: sha512-U7sxQk/n397Bmx4JHbJx/iSOOv5G+II3f1kpLpY2QeUv5DcPdcTsYLlusZfq1NthHS1c1cZoyFmmkex1rzke0A==}
     engines: {node: '>=14.0.0'}
@@ -3100,6 +3180,10 @@ packages:
 
 snapshots:
 
+  '@allmaps/annotation@1.0.0-beta.27':
+    dependencies:
+      zod: 3.23.8
+
   '@allmaps/id@1.0.0-beta.27':
     dependencies:
       '@allmaps/types': 1.0.0-beta.13
@@ -3109,7 +3193,36 @@ snapshots:
       '@allmaps/types': 1.0.0-beta.13
       zod: 3.23.8
 
+  '@allmaps/latest@1.0.0-beta.32(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.16)(vite@5.2.11))(svelte@4.2.16)(vite@5.2.11))(svelte@4.2.16)':
+    dependencies:
+      '@allmaps/annotation': 1.0.0-beta.27
+      '@allmaps/id': 1.0.0-beta.27
+      '@allmaps/tailwind': 1.0.0-beta.12
+      '@allmaps/transform': 1.0.0-beta.38
+      '@allmaps/types': 1.0.0-beta.13
+      '@allmaps/ui': 1.0.0-beta.28(@sveltejs/kit@2.5.10(@sveltejs/vite-plugin-svelte@3.1.0(svelte@4.2.16)(vite@5.2.11))(svelte@4.2.16)(vite@5.2.11))(svelte@4.2.16)
+      '@turf/rewind': 6.5.0
+      d3-geo: 3.1.1
+      svelte: 4.2.16
+    transitivePeerDependencies:
+      - '@sveltejs/kit'
+
+  '@allmaps/stdlib@1.0.0-beta.28':
+    dependencies:
+      '@allmaps/annotation': 1.0.0-beta.27
+      '@allmaps/iiif-parser': 1.0.0-beta.37
+      '@allmaps/types': 1.0.0-beta.13
+      '@placemarkio/geojson-rewind': 1.0.2
+      svg-parser: 2.0.4
+
   '@allmaps/tailwind@1.0.0-beta.12': {}
+
+  '@allmaps/transform@1.0.0-beta.38':
+    dependencies:
+      '@allmaps/stdlib': 1.0.0-beta.28
+      '@turf/distance': 6.5.0
+      '@turf/midpoint': 6.5.0
+      ml-matrix: 6.11.0
 
   '@allmaps/types@1.0.0-beta.13': {}
 
@@ -3815,6 +3928,8 @@ snapshots:
   '@pkgjs/parseargs@0.11.0':
     optional: true
 
+  '@placemarkio/geojson-rewind@1.0.2': {}
+
   '@polka/url@1.0.0-next.25': {}
 
   '@popperjs/core@2.11.8': {}
@@ -3921,6 +4036,55 @@ snapshots:
       lodash.merge: 4.6.2
       postcss-selector-parser: 6.0.10
       tailwindcss: 3.4.3
+
+  '@turf/bearing@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+
+  '@turf/boolean-clockwise@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+
+  '@turf/clone@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+
+  '@turf/destination@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+
+  '@turf/distance@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+
+  '@turf/helpers@6.5.0': {}
+
+  '@turf/invariant@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+
+  '@turf/meta@6.5.0':
+    dependencies:
+      '@turf/helpers': 6.5.0
+
+  '@turf/midpoint@6.5.0':
+    dependencies:
+      '@turf/bearing': 6.5.0
+      '@turf/destination': 6.5.0
+      '@turf/distance': 6.5.0
+      '@turf/helpers': 6.5.0
+
+  '@turf/rewind@6.5.0':
+    dependencies:
+      '@turf/boolean-clockwise': 6.5.0
+      '@turf/clone': 6.5.0
+      '@turf/helpers': 6.5.0
+      '@turf/invariant': 6.5.0
+      '@turf/meta': 6.5.0
 
   '@types/acorn@4.0.6':
     dependencies:
@@ -4406,6 +4570,14 @@ snapshots:
       source-map-js: 1.2.0
 
   cssesc@3.0.0: {}
+
+  d3-array@3.2.4:
+    dependencies:
+      internmap: 2.0.3
+
+  d3-geo@3.1.1:
+    dependencies:
+      d3-array: 3.2.4
 
   debug@4.3.4:
     dependencies:
@@ -5009,12 +5181,16 @@ snapshots:
 
   inline-style-parser@0.2.3: {}
 
+  internmap@2.0.3: {}
+
   is-alphabetical@2.0.1: {}
 
   is-alphanumerical@2.0.1:
     dependencies:
       is-alphabetical: 2.0.1
       is-decimal: 2.0.1
+
+  is-any-array@2.0.1: {}
 
   is-arrayish@0.3.2: {}
 
@@ -5660,6 +5836,25 @@ snapshots:
   minipass@7.1.1: {}
 
   mkdirp-classic@0.5.3: {}
+
+  ml-array-max@1.2.4:
+    dependencies:
+      is-any-array: 2.0.1
+
+  ml-array-min@1.2.3:
+    dependencies:
+      is-any-array: 2.0.1
+
+  ml-array-rescale@1.3.7:
+    dependencies:
+      is-any-array: 2.0.1
+      ml-array-max: 1.2.4
+      ml-array-min: 1.2.3
+
+  ml-matrix@6.11.0:
+    dependencies:
+      is-any-array: 2.0.1
+      ml-array-rescale: 1.3.7
 
   mri@1.2.0: {}
 
@@ -6347,6 +6542,8 @@ snapshots:
       locate-character: 3.0.0
       magic-string: 0.30.10
       periscopic: 3.1.0
+
+  svg-parser@2.0.4: {}
 
   tailwindcss@3.4.3:
     dependencies:
