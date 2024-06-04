@@ -10,8 +10,7 @@ template: splash
 main: true
 ---
 
-import { Steps } from '@astrojs/starlight/components'
-import { Tabs, TabItem } from '@astrojs/starlight/components'
+import { Steps , Tabs, TabItem } from '@astrojs/starlight/components'
 
 import { Latest } from '@allmaps/latest'
 import { MapMonster } from '@allmaps/ui'
@@ -193,8 +192,11 @@ A few examples of maps georeferenced with Allmaps:
         title="Nirenstein Atlas, Hollywood, 1956"
         institution="Los Angeles Public Library"
         annotationUrl="https://annotations.allmaps.org/manifests/64d6e35b64564692" />
-
-
+        <Example
+        src="manifests-06b7d15dc577b7ee"
+        title="Aerial survey, Manhattan Island, New York City"
+        institution="Library of Congress"
+        annotationUrl="https://annotations.allmaps.org/manifests/06b7d15dc577b7ee" />
     </Examples>
   </Wider>
 </div>
@@ -217,6 +219,11 @@ You can view more recent maps in [Allmaps Latest](https://latest.allmaps.org).
 - [Allmaps Tile Server](https://observablehq.com/@allmaps/allmaps-tile-server): proxy server that generates an XYZ map tile
   layer from one or more Georeference Annotations. You can use the Allmaps Tile Server to display warped maps in applications like QGIS.
 - More tools and experiments can be found on [GitHub](https://github.com/allmaps) and [Observable](https://observablehq.com/@allmaps).
+
+### Experiments
+
+- [Allmaps Here](https://dev.here.allmaps.org): shows georeferenced maps around your current location.
+- [Allmaps Explore](https://dev.here.allmaps.org): experimental interface for exploring all maps georeferenced with Allmaps, built with [Protomaps](https://protomaps.com/).
 
 ### Plugins
 
