@@ -1,4 +1,4 @@
-# Allmaps.org
+# pages.allmaps.org
 
 Allmaps mnakes it easier and more inspiring to explore, georeference and work with collections of digitized maps.
 
